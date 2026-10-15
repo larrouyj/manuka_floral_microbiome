@@ -1,0 +1,174 @@
+Sample_ID,Sample_type,Plant ,Group
+2-C2-P1-CKP1,Control_Kit,Control,Control
+2-C2-P1-CKS1,Control_Kit,Control,Control
+2-C2-P1-MC1,Mock_control,Control,Control
+2-C2-P1-MC2,Mock_control,Control,Control
+2-C2-P2-CKP2,Control_Kit,Control,Control
+2-C2-P2-MC1,Mock_control,Control,Control
+2-C2-P2-MC2,Mock_control,Control,Control
+2-C2-P-CKS2,Control_Kit,Control,Control
+2-CG1-B-1,Bee_epiphytes,CG1,Bee
+2-CG1-B-2,Bee_epiphytes,CG1,Bee
+2-CG1-B-3,Bee_epiphytes,CG1,Bee
+2-CG1-B-4,Bee_epiphytes,CG1,Bee
+2-CG1-B-5,Bee_epiphytes,CG1,Bee
+2-CG1-B-6,Bee_epiphytes,CG1,Bee
+2-CG1-B-7,Bee_epiphytes,CG1,Bee
+2-CG1-B-8,Bee_epiphytes,CG1,Bee
+2-CG1-BF-1,Bag_flowers,CG1,Above ground
+2-CG1-BF-2,Bag_flowers,CG1,Above ground
+2-CG1-BF-3,Bag_flowers,CG1,Above ground
+2-CG1-BF-4,Bag_flowers,CG1,Above ground
+2-CG1-BF-5,Bag_flowers,CG1,Above ground
+2-CG1-BF-6,Bag_flowers,CG1,Above ground
+2-CG1-BF-7,Bag_flowers,CG1,Above ground
+2-CG1-BF-8,Bag_flowers,CG1,Above ground
+2-CG1-F-1,Flowers,CG1,Above ground
+2-CG1-F-2,Flowers,CG1,Above ground
+2-CG1-F-3,Flowers,CG1,Above ground
+2-CG1-F-4,Flowers,CG1,Above ground
+2-CG1-F-5,Flowers,CG1,Above ground
+2-CG1-F-6,Flowers,CG1,Above ground
+2-CG1-F-7,Flowers,CG1,Above ground
+2-CG1-F-8,Flowers,CG1,Above ground
+2-CG1-L-1,Leaves,CG1,Above ground
+2-CG1-L-2,Leaves,CG1,Above ground
+2-CG1-L-3,Leaves,CG1,Above ground
+2-CG1-L-4,Leaves,CG1,Above ground
+2-CG1-L-5,Leaves,CG1,Above ground
+2-CG1-L-6,Leaves,CG1,Above ground
+2-CG1-L-7,Leaves,CG1,Above ground
+2-CG1-L-8,Leaves,CG1,Above ground
+2-CG1-R-1,Lateral_roots,CG1,Below ground
+2-CG1-R-2,Lateral_roots,CG1,Below ground
+2-CG1-R-3,Lateral_roots,CG1,Below ground
+2-CG1-R-4,Lateral_roots,CG1,Below ground
+2-CG1-R-6,Lateral_roots,CG1,Below ground
+2-CG1-R-7,Lateral_roots,CG1,Below ground
+2-CG1-R-8,Lateral_roots,CG1,Below ground
+2-CG1-S-1,Soil,CG1,Below ground
+2-CG1-S-2,Soil,CG1,Below ground
+2-CG1-S-3,Soil,CG1,Below ground
+2-CG1-S-4,Soil,CG1,Below ground
+2-CG1-S-5,Soil,CG1,Below ground
+2-CG1-S-6,Soil,CG1,Below ground
+2-CG1-S-8,Soil,CG1,Below ground
+2-CG1-ST-1,Underlying_flower_stem,CG1,Above ground
+2-CG1-ST-2,Underlying_flower_stem,CG1,Above ground
+2-CG1-ST-3,Underlying_flower_stem,CG1,Above ground
+2-CG1-ST-4,Underlying_flower_stem,CG1,Above ground
+2-CG1-ST-5,Underlying_flower_stem,CG1,Above ground
+2-CG1-ST-6,Underlying_flower_stem,CG1,Above ground
+2-CG1-ST-7,Underlying_flower_stem,CG1,Above ground
+2-CG1-ST-8,Underlying_flower_stem,CG1,Above ground
+2-CG2-B-1,Bee_epiphytes,CG2,Bee
+2-CG2-B-2,Bee_epiphytes,CG2,Bee
+2-CG2-B-3,Bee_epiphytes,CG2,Bee
+2-CG2-B-4,Bee_epiphytes,CG2,Bee
+2-CG2-B-5,Bee_epiphytes,CG2,Bee
+2-CG2-B-6,Bee_epiphytes,CG2,Bee
+2-CG2-B-7,Bee_epiphytes,CG2,Bee
+2-CG2-B-8,Bee_epiphytes,CG2,Bee
+2-CG2-BF-1,Bag_flowers,CG2,Above ground
+2-CG2-BF-2,Bag_flowers,CG2,Above ground
+2-CG2-BF-3,Bag_flowers,CG2,Above ground
+2-CG2-BF-4,Bag_flowers,CG2,Above ground
+2-CG2-BF-5,Bag_flowers,CG2,Above ground
+2-CG2-BF-6,Bag_flowers,CG2,Above ground
+2-CG2-BF-7,Bag_flowers,CG2,Above ground
+2-CG2-BF-8,Bag_flowers,CG2,Above ground
+2-CG2-F-1,Flowers,CG2,Above ground
+2-CG2-F-2,Flowers,CG2,Above ground
+2-CG2-F-3,Flowers,CG2,Above ground
+2-CG2-F-4,Flowers,CG2,Above ground
+2-CG2-F-5,Flowers,CG2,Above ground
+2-CG2-F-6,Flowers,CG2,Above ground
+2-CG2-F-7,Flowers,CG2,Above ground
+2-CG2-F-8,Flowers,CG2,Above ground
+2-CG2-L-1,Leaves,CG2,Above ground
+2-CG2-L-2,Leaves,CG2,Above ground
+2-CG2-L-3,Leaves,CG2,Above ground
+2-CG2-L-4,Leaves,CG2,Above ground
+2-CG2-L-5,Leaves,CG2,Above ground
+2-CG2-L-6,Leaves,CG2,Above ground
+2-CG2-L-7,Leaves,CG2,Above ground
+2-CG2-L-8,Leaves,CG2,Above ground
+2-CG2-R-1,Lateral_roots,CG2,Below ground
+2-CG2-R-2,Lateral_roots,CG2,Below ground
+2-CG2-R-3,Lateral_roots,CG2,Below ground
+2-CG2-R-4,Lateral_roots,CG2,Below ground
+2-CG2-R-5,Lateral_roots,CG2,Below ground
+2-CG2-R-6,Lateral_roots,CG2,Below ground
+2-CG2-R-7,Lateral_roots,CG2,Below ground
+2-CG2-R-8,Lateral_roots,CG2,Below ground
+2-CG2-S-1,Soil,CG2,Below ground
+2-CG2-S-2,Soil,CG2,Below ground
+2-CG2-S-3,Soil,CG2,Below ground
+2-CG2-S-4,Soil,CG2,Below ground
+2-CG2-S-5,Soil,CG2,Below ground
+2-CG2-S-6,Soil,CG2,Below ground
+2-CG2-S-7,Soil,CG2,Below ground
+2-CG2-S-8,Soil,CG2,Below ground
+2-CG2-ST-1,Underlying_flower_stem,CG2,Above ground
+2-CG2-ST-2,Underlying_flower_stem,CG2,Above ground
+2-CG2-ST-3,Underlying_flower_stem,CG2,Above ground
+2-CG2-ST-4,Underlying_flower_stem,CG2,Above ground
+2-CG2-ST-5,Underlying_flower_stem,CG2,Above ground
+2-CG2-ST-6,Underlying_flower_stem,CG2,Above ground
+2-CG2-ST-7,Underlying_flower_stem,CG2,Above ground
+2-CG2-ST-8,Underlying_flower_stem,CG2,Above ground
+2-CG3-B-1,Bee_epiphytes,CG3,Bee
+2-CG3-B-2,Bee_epiphytes,CG3,Bee
+2-CG3-B-3,Bee_epiphytes,CG3,Bee
+2-CG3-B-4,Bee_epiphytes,CG3,Bee
+2-CG3-B-5,Bee_epiphytes,CG3,Bee
+2-CG3-B-6,Bee_epiphytes,CG3,Bee
+2-CG3-B-7,Bee_epiphytes,CG3,Bee
+2-CG3-B-8,Bee_epiphytes,CG3,Bee
+2-CG3-BF-1,Bag_flowers,CG3,Above ground
+2-CG3-BF-2,Bag_flowers,CG3,Above ground
+2-CG3-BF-3,Bag_flowers,CG3,Above ground
+2-CG3-BF-4,Bag_flowers,CG3,Above ground
+2-CG3-BF-6,Bag_flowers,CG3,Above ground
+2-CG3-BF-7,Bag_flowers,CG3,Above ground
+2-CG3-BF-8,Bag_flowers,CG3,Above ground
+2-CG3-F-1,Flowers,CG3,Above ground
+2-CG3-F-2,Flowers,CG3,Above ground
+2-CG3-F-3,Flowers,CG3,Above ground
+2-CG3-F-4,Flowers,CG3,Above ground
+2-CG3-F-5,Flowers,CG3,Above ground
+2-CG3-F-6,Flowers,CG3,Above ground
+2-CG3-F-7,Flowers,CG3,Above ground
+2-CG3-F-8,Flowers,CG3,Above ground
+2-CG3-L-1,Leaves,CG3,Above ground
+2-CG3-L-2,Leaves,CG3,Above ground
+2-CG3-L-3,Leaves,CG3,Above ground
+2-CG3-L-4,Leaves,CG3,Above ground
+2-CG3-L-5,Leaves,CG3,Above ground
+2-CG3-L-6,Leaves,CG3,Above ground
+2-CG3-L-7,Leaves,CG3,Above ground
+2-CG3-L-8,Leaves,CG3,Above ground
+2-CG3-R-1,Lateral_roots,CG3,Below ground
+2-CG3-R-2,Lateral_roots,CG3,Below ground
+2-CG3-R-3,Lateral_roots,CG3,Below ground
+2-CG3-R-4,Lateral_roots,CG3,Below ground
+2-CG3-R-5,Lateral_roots,CG3,Below ground
+2-CG3-R-6,Lateral_roots,CG3,Below ground
+2-CG3-R-7,Lateral_roots,CG3,Below ground
+2-CG3-R-8,Lateral_roots,CG3,Below ground
+2-CG3-S-1,Soil,CG3,Below ground
+2-CG3-S-2,Soil,CG3,Below ground
+2-CG3-S-3,Soil,CG3,Below ground
+2-CG3-S-4,Soil,CG3,Below ground
+2-CG3-S-5,Soil,CG3,Below ground
+2-CG3-S-6,Soil,CG3,Below ground
+2-CG3-S-7,Soil,CG3,Below ground
+2-CG3-S-8,Soil,CG3,Below ground
+2-CG3-ST-1,Underlying_flower_stem,CG3,Above ground
+2-CG3-ST-2,Underlying_flower_stem,CG3,Above ground
+2-CG3-ST-3,Underlying_flower_stem,CG3,Above ground
+2-CG3-ST-4,Underlying_flower_stem,CG3,Above ground
+2-CG3-ST-5,Underlying_flower_stem,CG3,Above ground
+2-CG3-ST-6,Underlying_flower_stem,CG3,Above ground
+2-CG3-ST-7,Underlying_flower_stem,CG3,Above ground
+2-CG3-ST-8,Underlying_flower_stem,CG3,Above ground

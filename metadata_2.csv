@@ -1,0 +1,56 @@
+Sample_ID,Sample_type,Plant,Year,Group
+C2-P1-CKP1,Control_Kit,NA,Y_2020,NA
+C2-P1-MC1,Mock_control,NA,Y_2020,NA
+C2-P2-1PCR1,Control_PCR,NA,Y_2020,NA
+C2-P2-1PCR2,Control_PCR,NA,Y_2020,NA
+C2-P2-MC1,Mock_control,NA,Y_2020,NA
+C2-P2-MC2,Mock_control,NA,Y_2020,NA
+CG1-F-1,Flowers,Crimson_glory _1 ,Y_2020,CG1_2020
+CG1-F-2,Flowers,Crimson_glory _1 ,Y_2020,CG1_2020
+CG1-F-3,Flowers,Crimson_glory _1 ,Y_2020,CG1_2020
+CG1-F-4,Flowers,Crimson_glory _1 ,Y_2020,CG1_2020
+CG1-F-5,Flowers,Crimson_glory _1 ,Y_2020,CG1_2020
+CG1-F-6,Flowers,Crimson_glory _1 ,Y_2020,CG1_2020
+CG1-F-7,Flowers,Crimson_glory _1 ,Y_2020,CG1_2020
+CG1-F-8,Flowers,Crimson_glory _1 ,Y_2020,CG1_2020
+CG2-F-1,Flowers,Crimson_glory _2,Y_2020,CG2_2020
+CG2-F-2,Flowers,Crimson_glory _2,Y_2020,CG2_2020
+CG2-F-3,Flowers,Crimson_glory _2,Y_2020,CG2_2020
+CG2-F-4,Flowers,Crimson_glory _2,Y_2020,CG2_2020
+CG2-F-5,Flowers,Crimson_glory _2,Y_2020,CG2_2020
+CG2-F-6,Flowers,Crimson_glory _2,Y_2020,CG2_2020
+CG2-F-7,Flowers,Crimson_glory _2,Y_2020,CG2_2020
+CG2-F-8,Flowers,Crimson_glory _2,Y_2020,CG2_2020
+CG3-F-1,Flowers,Crimson_glory _3,Y_2020,CG3_2020
+CG3-F-2,Flowers,Crimson_glory _3,Y_2020,CG3_2020
+CG3-F-3,Flowers,Crimson_glory _3,Y_2020,CG3_2020
+CG3-F-4,Flowers,Crimson_glory _3,Y_2020,CG3_2020
+CG3-F-5,Flowers,Crimson_glory _3,Y_2020,CG3_2020
+CG3-F-6,Flowers,Crimson_glory _3,Y_2020,CG3_2020
+CG3-F-7,Flowers,Crimson_glory _3,Y_2020,CG3_2020
+CG3-F-8,Flowers,Crimson_glory _3,Y_2020,CG3_2020
+CG1-4-1,Flowers,Crimson_glory _1 ,Y_2019,CG1_2019
+CG1-4-2,Flowers,Crimson_glory _1 ,Y_2019,CG1_2019
+CG1-4-3,Flowers,Crimson_glory _1 ,Y_2019,CG1_2019
+CG1-4-4,Flowers,Crimson_glory _1 ,Y_2019,CG1_2019
+CG1-4-5,Flowers,Crimson_glory _1 ,Y_2019,CG1_2019
+CG1-4-6,Flowers,Crimson_glory _1 ,Y_2019,CG1_2019
+CG1-4-7,Flowers,Crimson_glory _1 ,Y_2019,CG1_2019
+CG1-4-8,Flowers,Crimson_glory _1 ,Y_2019,CG1_2019
+CG2-4-1,Flowers,Crimson_glory _2,Y_2019,CG2_2019
+CG2-4-2,Flowers,Crimson_glory _2,Y_2019,CG2_2019
+CG2-4-3,Flowers,Crimson_glory _2,Y_2019,CG2_2019
+CG2-4-4,Flowers,Crimson_glory _2,Y_2019,CG2_2019
+CG2-4-5,Flowers,Crimson_glory _2,Y_2019,CG2_2019
+CG2-4-6,Flowers,Crimson_glory _2,Y_2019,CG2_2019
+CG2-4-7,Flowers,Crimson_glory _2,Y_2019,CG2_2019
+CG2-4-8,Flowers,Crimson_glory _2,Y_2019,CG2_2019
+CG3-4-1,Flowers,Crimson_glory _3,Y_2019,CG3_2019
+CG3-4-2,Flowers,Crimson_glory _3,Y_2019,CG3_2019
+CG3-4-3,Flowers,Crimson_glory _3,Y_2019,CG3_2019
+CG3-4-4,Flowers,Crimson_glory _3,Y_2019,CG3_2019
+CG3-4-5,Flowers,Crimson_glory _3,Y_2019,CG3_2019
+CG3-4-6,Flowers,Crimson_glory _3,Y_2019,CG3_2019
+CG3-4-7,Flowers,Crimson_glory _3,Y_2019,CG3_2019
+P2-PS1,Mock_control,NA,Y_2019,NA
+P2-PS2,Mock_control,NA,Y_2019,NA

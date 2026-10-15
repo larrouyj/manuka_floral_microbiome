@@ -1,0 +1,173 @@
+Sample_ID,Sample_type,Plant ,Group,Niche
+CG1-BF-1,Bag_flowers,Crimson_glory _1 ,Above ground,Bag_flowers
+CG1-BF-2,Bag_flowers,Crimson_glory _1 ,Above ground,Bag_flowers
+CG1-BF-3,Bag_flowers,Crimson_glory _1 ,Above ground,Bag_flowers
+CG1-BF-4,Bag_flowers,Crimson_glory _1 ,Above ground,Bag_flowers
+CG1-BF-5,Bag_flowers,Crimson_glory _1 ,Above ground,Bag_flowers
+CG1-BF-6,Bag_flowers,Crimson_glory _1 ,Above ground,Bag_flowers
+CG1-BF-7,Bag_flowers,Crimson_glory _1 ,Above ground,Bag_flowers
+CG1-BF-8,Bag_flowers,Crimson_glory _1 ,Above ground,Bag_flowers
+CG2-BF-1,Bag_flowers,Crimson_glory _2,Above ground,Bag_flowers
+CG2-BF-2,Bag_flowers,Crimson_glory _2,Above ground,Bag_flowers
+CG2-BF-3,Bag_flowers,Crimson_glory _2,Above ground,Bag_flowers
+CG2-BF-4,Bag_flowers,Crimson_glory _2,Above ground,Bag_flowers
+CG2-BF-5,Bag_flowers,Crimson_glory _2,Above ground,Bag_flowers
+CG2-BF-6,Bag_flowers,Crimson_glory _2,Above ground,Bag_flowers
+CG2-BF-7,Bag_flowers,Crimson_glory _2,Above ground,Bag_flowers
+CG2-BF-8,Bag_flowers,Crimson_glory _2,Above ground,Bag_flowers
+CG3-BF-1,Bag_flowers,Crimson_glory _3,Above ground,Bag_flowers
+CG3-BF-2,Bag_flowers,Crimson_glory _3,Above ground,Bag_flowers
+CG3-BF-3,Bag_flowers,Crimson_glory _3,Above ground,Bag_flowers
+CG3-BF-4,Bag_flowers,Crimson_glory _3,Above ground,Bag_flowers
+CG3-BF-5,Bag_flowers,Crimson_glory _3,Above ground,Bag_flowers
+CG3-BF-6,Bag_flowers,Crimson_glory _3,Above ground,Bag_flowers
+CG3-BF-7,Bag_flowers,Crimson_glory _3,Above ground,Bag_flowers
+CG3-BF-8,Bag_flowers,Crimson_glory _3,Above ground,Bag_flowers
+CG1-B-1,Bee_epiphytes,Crimson_glory _1 ,Bee,Bee_epiphytes
+CG1-B-2,Bee_epiphytes,Crimson_glory _1 ,Bee,Bee_epiphytes
+CG1-B-3,Bee_epiphytes,Crimson_glory _1 ,Bee,Bee_epiphytes
+CG1-B-5,Bee_epiphytes,Crimson_glory _1 ,Bee,Bee_epiphytes
+CG1-B-6,Bee_epiphytes,Crimson_glory _1 ,Bee,Bee_epiphytes
+CG1-B-7,Bee_epiphytes,Crimson_glory _1 ,Bee,Bee_epiphytes
+CG1-B-8,Bee_epiphytes,Crimson_glory _1 ,Bee,Bee_epiphytes
+CG2-B-1,Bee_epiphytes,Crimson_glory _2,Bee,Bee_epiphytes
+CG2-B-2,Bee_epiphytes,Crimson_glory _2,Bee,Bee_epiphytes
+CG2-B-3,Bee_epiphytes,Crimson_glory _2,Bee,Bee_epiphytes
+CG2-B-4,Bee_epiphytes,Crimson_glory _2,Bee,Bee_epiphytes
+CG2-B-5,Bee_epiphytes,Crimson_glory _2,Bee,Bee_epiphytes
+CG2-B-6,Bee_epiphytes,Crimson_glory _2,Bee,Bee_epiphytes
+CG2-B-7,Bee_epiphytes,Crimson_glory _2,Bee,Bee_epiphytes
+CG2-B-8,Bee_epiphytes,Crimson_glory _2,Bee,Bee_epiphytes
+CG3-B-1,Bee_epiphytes,Crimson_glory _3,Bee,Bee_epiphytes
+CG3-B-2,Bee_epiphytes,Crimson_glory _3,Bee,Bee_epiphytes
+CG3-B-3,Bee_epiphytes,Crimson_glory _3,Bee,Bee_epiphytes
+CG3-B-5,Bee_epiphytes,Crimson_glory _3,Bee,Bee_epiphytes
+CG3-B-6,Bee_epiphytes,Crimson_glory _3,Bee,Bee_epiphytes
+CG3-B-7,Bee_epiphytes,Crimson_glory _3,Bee,Bee_epiphytes
+C2-P1-CKP1,Control_Kit,Plate_1,Control,Control_Kit
+C2-P1-CKS1,Control_Kit,Plate_1,Control,Control_Kit
+C2-P-CKS2,Control_Kit,Plate_2,Control,Control_Kit
+C2-P2-1PCR1,Control_PCR,Plate_2,Control,Control_PCR
+C2-P2-1PCR2,Control_PCR,Plate_2,Control,Control_PCR
+CG1-F-1,Flowers,Crimson_glory _1 ,Above ground,Flowers
+CG1-F-2,Flowers,Crimson_glory _1 ,Above ground,Flowers
+CG1-F-3,Flowers,Crimson_glory _1 ,Above ground,Flowers
+CG1-F-4,Flowers,Crimson_glory _1 ,Above ground,Flowers
+CG1-F-5,Flowers,Crimson_glory _1 ,Above ground,Flowers
+CG1-F-6,Flowers,Crimson_glory _1 ,Above ground,Flowers
+CG1-F-7,Flowers,Crimson_glory _1 ,Above ground,Flowers
+CG1-F-8,Flowers,Crimson_glory _1 ,Above ground,Flowers
+CG2-F-1,Flowers,Crimson_glory _2,Above ground,Flowers
+CG2-F-2,Flowers,Crimson_glory _2,Above ground,Flowers
+CG2-F-3,Flowers,Crimson_glory _2,Above ground,Flowers
+CG2-F-4,Flowers,Crimson_glory _2,Above ground,Flowers
+CG2-F-5,Flowers,Crimson_glory _2,Above ground,Flowers
+CG2-F-6,Flowers,Crimson_glory _2,Above ground,Flowers
+CG2-F-7,Flowers,Crimson_glory _2,Above ground,Flowers
+CG2-F-8,Flowers,Crimson_glory _2,Above ground,Flowers
+CG3-F-1,Flowers,Crimson_glory _3,Above ground,Flowers
+CG3-F-2,Flowers,Crimson_glory _3,Above ground,Flowers
+CG3-F-3,Flowers,Crimson_glory _3,Above ground,Flowers
+CG3-F-4,Flowers,Crimson_glory _3,Above ground,Flowers
+CG3-F-5,Flowers,Crimson_glory _3,Above ground,Flowers
+CG3-F-6,Flowers,Crimson_glory _3,Above ground,Flowers
+CG3-F-7,Flowers,Crimson_glory _3,Above ground,Flowers
+CG3-F-8,Flowers,Crimson_glory _3,Above ground,Flowers
+CG1-R-1,Lateral_roots,Crimson_glory _1 ,Below ground,Lateral_roots
+CG1-R-2,Lateral_roots,Crimson_glory _1 ,Below ground,Lateral_roots
+CG1-R-3,Lateral_roots,Crimson_glory _1 ,Below ground,Lateral_roots
+CG1-R-4,Lateral_roots,Crimson_glory _1 ,Below ground,Lateral_roots
+CG1-R-5,Lateral_roots,Crimson_glory _1 ,Below ground,Lateral_roots
+CG1-R-6,Lateral_roots,Crimson_glory _1 ,Below ground,Lateral_roots
+CG1-R-7,Lateral_roots,Crimson_glory _1 ,Below ground,Lateral_roots
+CG1-R-8,Lateral_roots,Crimson_glory _1 ,Below ground,Lateral_roots
+CG2-R-1,Lateral_roots,Crimson_glory _2,Below ground,Lateral_roots
+CG2-R-2,Lateral_roots,Crimson_glory _2,Below ground,Lateral_roots
+CG2-R-3,Lateral_roots,Crimson_glory _2,Below ground,Lateral_roots
+CG2-R-4,Lateral_roots,Crimson_glory _2,Below ground,Lateral_roots
+CG2-R-5,Lateral_roots,Crimson_glory _2,Below ground,Lateral_roots
+CG2-R-6,Lateral_roots,Crimson_glory _2,Below ground,Lateral_roots
+CG2-R-7,Lateral_roots,Crimson_glory _2,Below ground,Lateral_roots
+CG2-R-8,Lateral_roots,Crimson_glory _2,Below ground,Lateral_roots
+CG3-R-1,Lateral_roots,Crimson_glory _3,Below ground,Lateral_roots
+CG3-R-2,Lateral_roots,Crimson_glory _3,Below ground,Lateral_roots
+CG3-R-3,Lateral_roots,Crimson_glory _3,Below ground,Lateral_roots
+CG3-R-4,Lateral_roots,Crimson_glory _3,Below ground,Lateral_roots
+CG3-R-5,Lateral_roots,Crimson_glory _3,Below ground,Lateral_roots
+CG3-R-7,Lateral_roots,Crimson_glory _3,Below ground,Lateral_roots
+CG3-R-8,Lateral_roots,Crimson_glory _3,Below ground,Lateral_roots
+CG1-L-1,Leaves,Crimson_glory _1 ,Above ground,Leaves
+CG1-L-2,Leaves,Crimson_glory _1 ,Above ground,Leaves
+CG1-L-3,Leaves,Crimson_glory _1 ,Above ground,Leaves
+CG1-L-4,Leaves,Crimson_glory _1 ,Above ground,Leaves
+CG1-L-5,Leaves,Crimson_glory _1 ,Above ground,Leaves
+CG1-L-6,Leaves,Crimson_glory _1 ,Above ground,Leaves
+CG1-L-7,Leaves,Crimson_glory _1 ,Above ground,Leaves
+CG1-L-8,Leaves,Crimson_glory _1 ,Above ground,Leaves
+CG2-L-1,Leaves,Crimson_glory _2,Above ground,Leaves
+CG2-L-2,Leaves,Crimson_glory _2,Above ground,Leaves
+CG2-L-3,Leaves,Crimson_glory _2,Above ground,Leaves
+CG2-L-4,Leaves,Crimson_glory _2,Above ground,Leaves
+CG2-L-5,Leaves,Crimson_glory _2,Above ground,Leaves
+CG2-L-6,Leaves,Crimson_glory _2,Above ground,Leaves
+CG2-L-7,Leaves,Crimson_glory _2,Above ground,Leaves
+CG2-L-8,Leaves,Crimson_glory _2,Above ground,Leaves
+CG3-L-1,Leaves,Crimson_glory _3,Above ground,Leaves
+CG3-L-2,Leaves,Crimson_glory _3,Above ground,Leaves
+CG3-L-3,Leaves,Crimson_glory _3,Above ground,Leaves
+CG3-L-4,Leaves,Crimson_glory _3,Above ground,Leaves
+CG3-L-5,Leaves,Crimson_glory _3,Above ground,Leaves
+CG3-L-6,Leaves,Crimson_glory _3,Above ground,Leaves
+CG3-L-7,Leaves,Crimson_glory _3,Above ground,Leaves
+CG3-L-8,Leaves,Crimson_glory _3,Above ground,Leaves
+C2-P1-MC1,Mock_control_1,Plate_1,Control,Mock_control_1
+C2-P2-MC1,Mock_control_1,Plate_2,Control,Mock_control_1
+C2-P2-MC2,Mock_control_2,Plate_2,Control,Mock_control_2
+CG1-S-1,Soil,Crimson_glory _1 ,Below ground,Soil
+CG1-S-2,Soil,Crimson_glory _1 ,Below ground,Soil
+CG1-S-3,Soil,Crimson_glory _1 ,Below ground,Soil
+CG1-S-4,Soil,Crimson_glory _1 ,Below ground,Soil
+CG1-S-5,Soil,Crimson_glory _1 ,Below ground,Soil
+CG1-S-6,Soil,Crimson_glory _1 ,Below ground,Soil
+CG1-S-7,Soil,Crimson_glory _1 ,Below ground,Soil
+CG1-S-8,Soil,Crimson_glory _1 ,Below ground,Soil
+CG2-S-1,Soil,Crimson_glory _2,Below ground,Soil
+CG2-S-2,Soil,Crimson_glory _2,Below ground,Soil
+CG2-S-3,Soil,Crimson_glory _2,Below ground,Soil
+CG2-S-4,Soil,Crimson_glory _2,Below ground,Soil
+CG2-S-5,Soil,Crimson_glory _2,Below ground,Soil
+CG2-S-6,Soil,Crimson_glory _2,Below ground,Soil
+CG2-S-7,Soil,Crimson_glory _2,Below ground,Soil
+CG2-S-8,Soil,Crimson_glory _2,Below ground,Soil
+CG3-S-1,Soil,Crimson_glory _3,Below ground,Soil
+CG3-S-2,Soil,Crimson_glory _3,Below ground,Soil
+CG3-S-3,Soil,Crimson_glory _3,Below ground,Soil
+CG3-S-4,Soil,Crimson_glory _3,Below ground,Soil
+CG3-S-5,Soil,Crimson_glory _3,Below ground,Soil
+CG3-S-6,Soil,Crimson_glory _3,Below ground,Soil
+CG3-S-7,Soil,Crimson_glory _3,Below ground,Soil
+CG3-S-8,Soil,Crimson_glory _3,Below ground,Soil
+CG1-ST-1,Underlying_flower_stem,Crimson_glory _1 ,Above ground,Underlying_flower_stem
+CG1-ST-2,Underlying_flower_stem,Crimson_glory _1 ,Above ground,Underlying_flower_stem
+CG1-ST-3,Underlying_flower_stem,Crimson_glory _1 ,Above ground,Underlying_flower_stem
+CG1-ST-4,Underlying_flower_stem,Crimson_glory _1 ,Above ground,Underlying_flower_stem
+CG1-ST-5,Underlying_flower_stem,Crimson_glory _1 ,Above ground,Underlying_flower_stem
+CG1-ST-6,Underlying_flower_stem,Crimson_glory _1 ,Above ground,Underlying_flower_stem
+CG1-ST-7,Underlying_flower_stem,Crimson_glory _1 ,Above ground,Underlying_flower_stem
+CG1-ST-8,Underlying_flower_stem,Crimson_glory _1 ,Above ground,Underlying_flower_stem
+CG2-ST-1,Underlying_flower_stem,Crimson_glory _2,Above ground,Underlying_flower_stem
+CG2-ST-2,Underlying_flower_stem,Crimson_glory _2,Above ground,Underlying_flower_stem
+CG2-ST-3,Underlying_flower_stem,Crimson_glory _2,Above ground,Underlying_flower_stem
+CG2-ST-4,Underlying_flower_stem,Crimson_glory _2,Above ground,Underlying_flower_stem
+CG2-ST-5,Underlying_flower_stem,Crimson_glory _2,Above ground,Underlying_flower_stem
+CG2-ST-6,Underlying_flower_stem,Crimson_glory _2,Above ground,Underlying_flower_stem
+CG2-ST-7,Underlying_flower_stem,Crimson_glory _2,Above ground,Underlying_flower_stem
+CG2-ST-8,Underlying_flower_stem,Crimson_glory _2,Above ground,Underlying_flower_stem
+CG3-ST-1,Underlying_flower_stem,Crimson_glory _3,Above ground,Underlying_flower_stem
+CG3-ST-2,Underlying_flower_stem,Crimson_glory _3,Above ground,Underlying_flower_stem
+CG3-ST-3,Underlying_flower_stem,Crimson_glory _3,Above ground,Underlying_flower_stem
+CG3-ST-4,Underlying_flower_stem,Crimson_glory _3,Above ground,Underlying_flower_stem
+CG3-ST-5,Underlying_flower_stem,Crimson_glory _3,Above ground,Underlying_flower_stem
+CG3-ST-6,Underlying_flower_stem,Crimson_glory _3,Above ground,Underlying_flower_stem
+CG3-ST-7,Underlying_flower_stem,Crimson_glory _3,Above ground,Underlying_flower_stem
+CG3-ST-8,Underlying_flower_stem,Crimson_glory _3,Above ground,Underlying_flower_stem

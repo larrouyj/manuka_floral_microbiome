@@ -1,0 +1,425 @@
+query	superkingdom	kingdom	subkingdom	phylum	class	subclass	order	suborder	family	genus	species
+M01895:245:000000000-J536R:1:1101:16238:3965											
+M01895:245:000000000-J536R:1:1101:26038:6874											
+M01895:315:000000000-JT5L9:1:1101:17372:5159	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Cryptococcaceae	Cryptococcus	
+M01895:245:000000000-J536R:1:1101:22954:11398	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Dothideales		Saccotheciaceae	Aureobasidium	
+M01895:245:000000000-J536R:1:1109:9603:25370	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	
+M01895:245:000000000-J536R:1:1101:4241:8449	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes						
+M01895:315:000000000-JT5L9:1:1108:27647:10243	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma carnescens
+M01895:245:000000000-J536R:1:1101:6522:10813	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	
+M01895:245:000000000-J536R:1:2101:9439:26182	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:2102:11803:4209	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma victoriae
+M01895:245:000000000-J536R:1:1104:14151:5917	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	
+M01895:245:000000000-J536R:1:2105:24417:17137	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Phaeotremellaceae	Phaeotremella	
+M01895:315:000000000-JT5L9:1:1114:11722:19056	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes					Symmetrospora	Symmetrospora symmetrica
+M01895:315:000000000-JT5L9:1:2106:18606:8909	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Eurotiomycetidae	Eurotiales		Aspergillaceae	Penicillium	
+M01895:245:000000000-J536R:1:2104:11214:3852	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes						
+M01895:315:000000000-JT5L9:1:2110:18826:5946	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales		Nectriaceae		
+M01895:245:000000000-J536R:1:1101:18254:18646	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes		Cystobasidiales		Cystobasidiaceae	Cystobasidium	Cystobasidium laryngis
+M01895:315:000000000-JT5L9:1:1106:21386:21402	Eukaryota	Fungi	Dikarya	Ascomycota	Taphrinomycetes		Taphrinales		Taphrinaceae	Taphrina	
+M01895:315:000000000-JT5L9:1:2102:28102:18649	Eukaryota	Fungi	Dikarya	Basidiomycota							
+M01895:245:000000000-J536R:1:2110:4656:9534	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes						
+M01895:315:000000000-JT5L9:1:2108:16582:2754	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales		Phaffomycetaceae	Wickerhamomyces	Wickerhamomyces anomalus
+M01895:315:000000000-JT5L9:1:1107:15662:4681	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Cryptococcaceae	Kwoniella	Kwoniella dendrophila
+M01895:315:000000000-JT5L9:1:2107:14410:26001	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales		Metschnikowiaceae	Metschnikowia	
+M01895:245:000000000-J536R:1:2106:17013:6938	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Dioszegia	
+M01895:315:000000000-JT5L9:1:1101:9819:20563	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Filobasidium	Filobasidium magnum
+M01895:245:000000000-J536R:1:1103:16508:14335	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Coniothyriaceae	Coniothyrium	Coniothyrium hakeae
+M01895:315:000000000-JT5L9:1:2107:20407:7983	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Sordariales		Chaetomiaceae	Humicola	Humicola fuscoatra
+M01895:245:000000000-J536R:1:2107:21509:12061	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:245:000000000-J536R:1:1102:25384:14470	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Cystofilobasidiales		Mrakiaceae	Mrakia	Mrakia aquatica
+M01895:315:000000000-JT5L9:1:2114:7245:25467	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleraceae	Genolevuria	Genolevuria amylolytica
+M01895:245:000000000-J536R:1:2105:7881:24985	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:245:000000000-J536R:1:2108:11874:7356	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae					
+M01895:315:000000000-JT5L9:1:1102:18889:15911	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales		Metschnikowiaceae	Metschnikowia	
+M01895:245:000000000-J536R:1:1111:10718:3105	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma globospora
+M01895:315:000000000-JT5L9:1:2101:24474:20206	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales		Metschnikowiaceae	Metschnikowia	
+M01895:245:000000000-J536R:1:1101:25986:10675	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Trichosporonales		Trichosporonaceae	Apiotrichum	
+M01895:315:000000000-JT5L9:1:1104:12920:16440	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae	Chaetothyriales		Chaetothyriaceae		
+M01895:315:000000000-JT5L9:1:2105:17678:12804	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Naganishia	
+M01895:245:000000000-J536R:1:1102:15759:15777	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Dioszegia	
+M01895:245:000000000-J536R:1:2110:4548:13454	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:1108:9864:23059	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:1114:26857:19070	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	
+M01895:315:000000000-JT5L9:1:2101:19407:4168	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	
+M01895:315:000000000-JT5L9:1:1103:19905:27041	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Cystofilobasidiales		Cystofilobasidiaceae	Cystofilobasidium	
+M01895:245:000000000-J536R:1:2107:25227:20096	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2106:20298:17704	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Holtermanniales			Holtermanniella	
+M01895:315:000000000-JT5L9:1:2112:28339:10911	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae	Phaeomoniellales			Neophaeomoniella	
+M01895:245:000000000-J536R:1:1101:14059:14297	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales				
+M01895:315:000000000-JT5L9:1:2103:15964:20097	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma dimennae
+M01895:315:000000000-JT5L9:1:2105:23485:11869	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales		Cordycipitaceae		
+M01895:315:000000000-JT5L9:1:2106:6860:16882	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes		Helotiales		Sclerotiniaceae		
+M01895:315:000000000-JT5L9:1:1108:17919:6318	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Pleosporaceae	Alternaria	
+M01895:315:000000000-JT5L9:1:1108:23496:6054	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes		Erythrobasidiales		Erythrobasidiaceae	Erythrobasidium	
+M01895:245:000000000-J536R:1:1101:6430:21267	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales				
+M01895:245:000000000-J536R:1:2101:20589:25357	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Pleosporaceae	Alternaria	
+M01895:245:000000000-J536R:1:2106:27247:9967	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes						
+M01895:315:000000000-JT5L9:1:1102:3879:19973	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes						
+M01895:315:000000000-JT5L9:1:1107:4236:18461	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Cystofilobasidiales		Mrakiaceae	Itersonilia	Itersonilia perplexans
+M01895:315:000000000-JT5L9:1:1109:7485:16946	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Pleosporaceae	Alternaria	
+M01895:245:000000000-J536R:1:1113:8388:14078	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma carnescens
+M01895:245:000000000-J536R:1:2104:18225:19595	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Dictyosporiaceae	Pseudocoleophoma	Pseudocoleophoma typhicola
+M01895:245:000000000-J536R:1:2104:9934:17980	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae	Chaetothyriales		Herpotrichiellaceae	Exophiala	[Exophiala] eucalyptorum
+M01895:315:000000000-JT5L9:1:1109:6423:18311	Eukaryota	Fungi	Dikarya	Basidiomycota	Malasseziomycetes		Malasseziales		Malasseziaceae	Malassezia	Malassezia restricta
+M01895:245:000000000-J536R:1:2111:5874:25055	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Rhynchogastremataceae	Papiliotrema	
+M01895:315:000000000-JT5L9:1:1106:7083:7217	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	
+M01895:315:000000000-JT5L9:1:1106:25914:11875	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1110:3560:21129	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:245:000000000-J536R:1:1111:9088:10890	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Naemateliaceae	Dimennazyma	Dimennazyma cisti-albidi
+M01895:315:000000000-JT5L9:1:1104:5295:15186	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes						
+M01895:315:000000000-JT5L9:1:2103:10765:21057	Eukaryota	Fungi	Dikarya	Basidiomycota	Microbotryomycetes		Sporidiobolales		Sporidiobolaceae	Sporobolomyces	Sporobolomyces roseus
+M01895:245:000000000-J536R:1:2110:13642:8981	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:245:000000000-J536R:1:2102:9714:19834	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales				
+M01895:315:000000000-JT5L9:1:2111:18710:3691	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Cystofilobasidiales		Cystofilobasidiaceae	Cystofilobasidium	Cystofilobasidium infirmominiatum
+M01895:245:000000000-J536R:1:2107:11409:6708	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Diaporthales		Diaporthaceae	Diaporthe	Diaporthe rudis
+M01895:245:000000000-J536R:1:2111:7616:10261	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Capnodiaceae	Antennariella	Antennariella placitae
+M01895:245:000000000-J536R:1:2110:6801:24230	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma carnescens
+M01895:315:000000000-JT5L9:1:1111:26056:16184	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales		Teichosporaceae	Teichospora	
+M01895:315:000000000-JT5L9:1:1102:6662:20044	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Eurotiomycetidae	Eurotiales		Aspergillaceae	Penicillium	
+M01895:245:000000000-J536R:1:1102:22050:17770	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Phaeotremellaceae	Phaeotremella	
+M01895:245:000000000-J536R:1:2114:19216:4209	Eukaryota	Fungi	Dikarya	Basidiomycota							
+M01895:245:000000000-J536R:1:1111:7394:7658	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2114:3951:11486	Eukaryota	Fungi	Dikarya	Basidiomycota	Microbotryomycetes					Curvibasidium	Curvibasidium cygneicollum
+M01895:245:000000000-J536R:1:1107:3077:21253	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:245:000000000-J536R:1:2109:20881:24174	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:1112:22499:27047	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales				
+M01895:315:000000000-JT5L9:1:2106:23706:15193	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Diaporthales		Diaporthaceae	Diaporthe	Diaporthe passiflorae
+M01895:315:000000000-JT5L9:1:2110:10972:27470	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Filobasidium	Filobasidium wieringae
+M01895:245:000000000-J536R:1:1101:12058:12535	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Naganishia	
+M01895:315:000000000-JT5L9:1:2109:6130:20970	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	
+M01895:315:000000000-JT5L9:1:2105:5373:14660	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes					Buckleyzyma	Buckleyzyma aurantiaca
+M01895:245:000000000-J536R:1:1107:17239:4906	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	
+M01895:245:000000000-J536R:1:1109:12301:15843	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Trimorphomycetaceae	Saitozyma	
+M01895:245:000000000-J536R:1:2110:6555:7105											
+M01895:315:000000000-JT5L9:1:1101:3709:11560	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Didymellaceae	Epicoccum	Epicoccum plurivorum
+M01895:315:000000000-JT5L9:1:1110:6915:25964	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae			
+M01895:245:000000000-J536R:1:1111:18829:14351	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Capnodiaceae		
+M01895:245:000000000-J536R:1:2104:15735:4596	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:2110:26149:21066											
+M01895:315:000000000-JT5L9:1:1106:21216:21136	Eukaryota	Fungi	Dikarya	Basidiomycota	Microbotryomycetes					Colacogloea	
+M01895:315:000000000-JT5L9:1:2113:8846:24331	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae					
+M01895:315:000000000-JT5L9:1:1107:21283:10300	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleraceae	Bullera	Bullera alba
+M01895:315:000000000-JT5L9:1:2102:7324:20043	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Didymellaceae		
+M01895:315:000000000-JT5L9:1:2110:6706:9425	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Filobasidium	
+M01895:245:000000000-J536R:1:2104:23677:18011	Eukaryota	Fungi	Dikarya	Basidiomycota	Pucciniomycetes						
+M01895:315:000000000-JT5L9:1:1104:17739:10986	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes					Symmetrospora	Symmetrospora coprosmae
+M01895:245:000000000-J536R:1:2102:26775:8148	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:245:000000000-J536R:1:2114:28759:14256	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:1101:21598:23222	Eukaryota	Fungi	Dikarya	Basidiomycota	Microbotryomycetes		Sporidiobolales		Sporidiobolaceae	Sporobolomyces	Sporobolomyces ruberrimus
+M01895:315:000000000-JT5L9:1:1101:5737:7363	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Xylariomycetidae	Xylariales				
+M01895:315:000000000-JT5L9:1:1108:16010:14713	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes						
+M01895:315:000000000-JT5L9:1:2108:14830:16834	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes		Cystobasidiales		Cystobasidiaceae	Cystobasidium	Cystobasidium minutum
+M01895:245:000000000-J536R:1:1104:18479:10716	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	
+M01895:245:000000000-J536R:1:1110:13267:9647	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae	Chaetothyriales				
+M01895:315:000000000-JT5L9:1:1108:7700:21744	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales				
+M01895:315:000000000-JT5L9:1:2101:16650:22564	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales				
+M01895:315:000000000-JT5L9:1:2110:6834:20925	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Didymellaceae		
+M01895:245:000000000-J536R:1:1101:18653:18175	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales				
+M01895:245:000000000-J536R:1:1112:16305:10067	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:2101:18958:7949	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Teratosphaeriaceae	Catenulostroma	
+M01895:245:000000000-J536R:1:2114:9045:25378	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Trichosporonales		Trichosporonaceae	Cutaneotrichosporon	
+M01895:315:000000000-JT5L9:1:1107:24532:23606	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes		Erysiphales		Erysiphaceae	Podosphaera	Podosphaera leucotricha
+M01895:315:000000000-JT5L9:1:1113:15618:6725	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2104:17312:5725	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Russulales		Peniophoraceae	Peniophora	
+M01895:315:000000000-JT5L9:1:2112:10714:16505	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales		Lophiostomataceae		
+M01895:315:000000000-JT5L9:1:2114:19023:11344	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Mycosphaerellaceae		
+M01895:315:000000000-JT5L9:1:1114:13569:23720	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma victoriae
+M01895:245:000000000-J536R:1:1101:10104:8451	Eukaryota	Fungi	Dikarya	Basidiomycota							
+M01895:245:000000000-J536R:1:1114:2072:16195	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:2106:24894:19194	Eukaryota	Fungi	Dikarya	Basidiomycota	Pucciniomycetes		Septobasidiales		Septobasidiaceae		
+M01895:245:000000000-J536R:1:2114:13554:19687	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Xylariomycetidae	Xylariales		Amphisphaeriaceae		
+M01895:315:000000000-JT5L9:1:1112:17472:18189	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Pleosporaceae		
+M01895:315:000000000-JT5L9:1:2103:3095:14864	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Cystofilobasidiales		Mrakiaceae	Tausonia	Tausonia pullulans
+M01895:315:000000000-JT5L9:1:2105:8425:20111	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes						
+M01895:315:000000000-JT5L9:1:2111:4607:16594	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Filobasidium	Filobasidium oeirense
+M01895:315:000000000-JT5L9:1:2113:20873:3967	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Cryptococcaceae	Cryptococcus	
+M01895:245:000000000-J536R:1:1102:11660:20392	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Dothideales				
+M01895:245:000000000-J536R:1:1111:16084:17616	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1114:22942:18713	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Tremellaceae	Tremella	
+M01895:315:000000000-JT5L9:1:1101:22118:7401	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales				
+M01895:315:000000000-JT5L9:1:1105:22261:11553	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales		Clavicipitaceae	Claviceps	Claviceps purpurea
+M01895:315:000000000-JT5L9:1:2101:11339:24166											
+M01895:245:000000000-J536R:1:1101:9193:11236	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Mycosphaerellaceae	Ramularia	
+M01895:245:000000000-J536R:1:1102:6930:6790	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Mycosphaerellaceae		
+M01895:245:000000000-J536R:1:1102:8164:20851	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Naganishia	
+M01895:245:000000000-J536R:1:1109:23792:10011	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Didymellaceae		
+M01895:245:000000000-J536R:1:1110:15345:5942	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1112:16914:23902	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales				
+M01895:245:000000000-J536R:1:2114:17274:12838	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	Cladosporium aggregatocicatricatum
+M01895:315:000000000-JT5L9:1:1101:20262:16988	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Didymosphaeriaceae	Paraconiothyrium	Paraconiothyrium archidendri
+M01895:315:000000000-JT5L9:1:1102:11500:24110	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Filobasidium	Filobasidium oeirense
+M01895:315:000000000-JT5L9:1:1103:13782:20572	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Diaporthales		Valsaceae	Cytospora	Cytospora ribis
+M01895:315:000000000-JT5L9:1:1103:28241:15122											
+M01895:315:000000000-JT5L9:1:1106:16348:8740	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes						
+M01895:315:000000000-JT5L9:1:1113:18574:26492	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Cystofilobasidiales		Mrakiaceae	Udeniomyces	Udeniomyces pyricola
+M01895:315:000000000-JT5L9:1:2102:22889:16506	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes		Erysiphales		Erysiphaceae	Erysiphe	
+M01895:315:000000000-JT5L9:1:2106:19997:8627	Eukaryota	Fungi	Dikarya	Basidiomycota	Dacrymycetes		Dacrymycetales		Dacrymycetaceae	Dacrymyces	Dacrymyces novae-zelandiae
+M01895:315:000000000-JT5L9:1:2108:19440:21035	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Teratosphaeriaceae		
+M01895:315:000000000-JT5L9:1:2111:23504:15352	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae			
+M01895:245:000000000-J536R:1:1102:24540:9946	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes						
+M01895:245:000000000-J536R:1:1106:13776:24111	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Didymosphaeriaceae	Pseudopithomyces	Pseudopithomyces chartarum
+M01895:245:000000000-J536R:1:1107:7159:19228	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Dioszegia	
+M01895:245:000000000-J536R:1:1108:18555:16593	Eukaryota	Fungi	Dikarya	Basidiomycota	Ustilaginomycetes		Ustilaginales		Ustilaginaceae	Ustilago	
+M01895:245:000000000-J536R:1:1109:3635:19091											
+M01895:245:000000000-J536R:1:2105:18342:21086	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Trichosporonales		Trichosporonaceae	Trichosporon	
+M01895:245:000000000-J536R:1:2106:14851:28406	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:2109:2674:16621	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:1101:6949:14199	Eukaryota	Fungi	Dikarya	Ascomycota	Lecanoromycetes	Lecanoromycetidae	Caliciales		Physciaceae		
+M01895:315:000000000-JT5L9:1:1104:15086:9889	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Dothideales				
+M01895:315:000000000-JT5L9:1:1109:9109:17744	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Cystofilobasidiales		Mrakiaceae	Udeniomyces	Udeniomyces puniceus
+M01895:315:000000000-JT5L9:1:1111:19763:17548	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Phaeosphaeriaceae		
+M01895:315:000000000-JT5L9:1:1111:26158:18617	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales		Metschnikowiaceae	Metschnikowia	
+M01895:315:000000000-JT5L9:1:1114:24394:14935	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales		Nectriaceae	Fusarium	
+M01895:315:000000000-JT5L9:1:2109:20738:17795	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	Cladosporium austrohemisphaericum
+M01895:315:000000000-JT5L9:1:2111:28031:16029	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1103:26635:6728	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma victoriae
+M01895:245:000000000-J536R:1:1106:3108:18482	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Teratosphaeriaceae		
+M01895:245:000000000-J536R:1:1108:17634:25196	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Sirobasidiaceae	Fibulobasidium	
+M01895:245:000000000-J536R:1:1113:9510:24186	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Cryptococcaceae	Kwoniella	
+M01895:245:000000000-J536R:1:2103:18805:19332	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleraceae	Fonsecazyma	Fonsecazyma betulae
+M01895:245:000000000-J536R:1:2105:25008:24565	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Capnodiaceae	Antennariella	Antennariella placitae
+M01895:245:000000000-J536R:1:2106:13970:14032											
+M01895:245:000000000-J536R:1:2106:14279:10722	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:2106:7476:5535	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes	Agaricomycetidae	Agaricales		Psathyrellaceae	Coprinopsis	Coprinopsis sclerotiger
+M01895:245:000000000-J536R:1:2106:8158:10458	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleraceae	Genolevuria	
+M01895:245:000000000-J536R:1:2109:15937:15757	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales				
+M01895:245:000000000-J536R:1:2111:8971:3645	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma dimennae
+M01895:315:000000000-JT5L9:1:1103:18370:12719	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes						
+M01895:315:000000000-JT5L9:1:1109:13177:8388	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Phaeosphaeriaceae		
+M01895:315:000000000-JT5L9:1:1109:19547:6458	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Didymosphaeriaceae	Pseudopithomyces	
+M01895:315:000000000-JT5L9:1:1112:21677:14798	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes						
+M01895:315:000000000-JT5L9:1:1113:18299:25433	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:2101:17931:4286	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Diaporthales		Diaporthaceae	Diaporthe	
+M01895:315:000000000-JT5L9:1:2101:26304:13983	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes						
+M01895:315:000000000-JT5L9:1:2104:10169:21886	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Hannaella	Hannaella zeae
+M01895:315:000000000-JT5L9:1:2104:13317:13907	Eukaryota	Fungi	Dikarya	Ascomycota	Taphrinomycetes		Taphrinales		Taphrinaceae	Taphrina	Taphrina wiesneri
+M01895:315:000000000-JT5L9:1:2109:13185:13185	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae			
+M01895:245:000000000-J536R:1:1102:17669:25528	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1102:4921:12456											
+M01895:245:000000000-J536R:1:1102:6624:16972	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Piskurozymaceae		
+M01895:245:000000000-J536R:1:1104:21415:16183	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes		Helotiales				
+M01895:245:000000000-J536R:1:1108:24684:7445	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales				
+M01895:245:000000000-J536R:1:1109:7358:16219	Eukaryota	Fungi	Dikarya	Basidiomycota	Pucciniomycetes		Septobasidiales		Septobasidiaceae	Septobasidium	
+M01895:245:000000000-J536R:1:1110:6913:25582											
+M01895:245:000000000-J536R:1:1111:13264:3379	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes						
+M01895:245:000000000-J536R:1:1111:25593:10177	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales		Metschnikowiaceae		
+M01895:245:000000000-J536R:1:1112:25323:14719	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes						
+M01895:245:000000000-J536R:1:1113:10982:19732	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales				
+M01895:245:000000000-J536R:1:1113:21896:23530	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Neodevriesiaceae	Neodevriesia	
+M01895:245:000000000-J536R:1:2102:18478:25467	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Phaeosphaeriaceae		
+M01895:245:000000000-J536R:1:2108:19638:4865	Eukaryota	Fungi	Dikarya								
+M01895:245:000000000-J536R:1:2110:6871:9359	Eukaryota	Fungi									
+M01895:245:000000000-J536R:1:2112:4234:11101	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales				
+M01895:245:000000000-J536R:1:2113:10204:18495	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales				
+M01895:315:000000000-JT5L9:1:1102:23229:5075	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Xylariomycetidae	Xylariales		Sporocadaceae	Pestalotiopsis	Pestalotiopsis knightiae
+M01895:315:000000000-JT5L9:1:1103:23922:9043	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Corticiales		Corticiaceae	Limonomyces	Limonomyces roseipellis
+M01895:315:000000000-JT5L9:1:1103:24587:17868	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales		Teichosporaceae	Teichospora	
+M01895:315:000000000-JT5L9:1:1104:18344:16038	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:1106:11284:15299	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales		Lophiostomataceae		
+M01895:315:000000000-JT5L9:1:1106:1936:13540	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	
+M01895:315:000000000-JT5L9:1:1107:17706:2152	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Didymosphaeriaceae		
+M01895:315:000000000-JT5L9:1:1107:21628:24455	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Xylariomycetidae	Xylariales		Microdochiaceae	Microdochium	Microdochium bolleyi
+M01895:315:000000000-JT5L9:1:1113:17882:26306	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:2102:9760:22596	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Didymosphaeriaceae	Paraphaeosphaeria	Paraphaeosphaeria michotii
+M01895:315:000000000-JT5L9:1:2104:20416:25419	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2107:5540:21910	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Rachicladosporium	
+M01895:315:000000000-JT5L9:1:2108:15663:18569	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes						
+M01895:315:000000000-JT5L9:1:2112:10233:15085	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales		Teichosporaceae	Teichospora	
+M01895:315:000000000-JT5L9:1:2113:17948:28545	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Dioszegia	
+M01895:315:000000000-JT5L9:1:2113:19224:22998	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes					Leptospora	Leptospora rubella
+M01895:315:000000000-JT5L9:1:2114:18554:5260	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1101:5535:11330											
+M01895:245:000000000-J536R:1:1102:10260:23311	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Dissoconiaceae		
+M01895:245:000000000-J536R:1:1103:16130:10337	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1103:19552:24587	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes		Cystobasidiales				
+M01895:245:000000000-J536R:1:1103:9119:13593	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:245:000000000-J536R:1:1104:8292:3970	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes						
+M01895:245:000000000-J536R:1:1106:14533:25041	Eukaryota	Fungi	Dikarya	Ascomycota	Taphrinomycetes		Taphrinales		Taphrinaceae	Taphrina	
+M01895:245:000000000-J536R:1:1106:15117:19895	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricostilbomycetes		Agaricostilbales		Agaricostilbaceae	Sterigmatomyces	
+M01895:245:000000000-J536R:1:1106:6862:10692	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Cryptococcaceae	Kwoniella	
+M01895:245:000000000-J536R:1:1107:14505:20797	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Myriangiales		Myriangiaceae	Myriangium	
+M01895:245:000000000-J536R:1:1107:23865:6106	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1108:19058:13307	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes						
+M01895:245:000000000-J536R:1:1109:16136:25043	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae		
+M01895:245:000000000-J536R:1:1111:10048:24478	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricostilbomycetes		Agaricostilbales		Kondoaceae	Kondoa	
+M01895:245:000000000-J536R:1:1111:4935:23290	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Phaeosphaeriaceae		
+M01895:245:000000000-J536R:1:1112:11792:5043	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1114:10506:15809	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1114:12097:8893	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Sirobasidiaceae	Fibulobasidium	
+M01895:245:000000000-J536R:1:1114:20752:19199	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales				
+M01895:245:000000000-J536R:1:1114:22512:4578	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:2101:19790:13908	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae	Chaetothyriales		Herpotrichiellaceae		
+M01895:245:000000000-J536R:1:2102:4887:23545	Eukaryota	Fungi	Dikarya	Basidiomycota	Microbotryomycetes		Sporidiobolales		Sporidiobolaceae	Rhodotorula	Rhodotorula babjevae
+M01895:245:000000000-J536R:1:2102:7686:5535	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Phaeosphaeriaceae		
+M01895:245:000000000-J536R:1:2106:17556:22914	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae			
+M01895:245:000000000-J536R:1:2106:28118:14863	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Hymenochaetales			Resinicium	Resinicium bicolor
+M01895:245:000000000-J536R:1:2106:6371:10180	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes						
+M01895:245:000000000-J536R:1:2107:11238:10930											
+M01895:245:000000000-J536R:1:2108:10101:18717	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Phaeosphaeriaceae	Parastagonospora	
+M01895:245:000000000-J536R:1:2108:17291:27821	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:2108:18929:10201	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae					
+M01895:245:000000000-J536R:1:2109:11001:6471	Eukaryota	Fungi	Dikarya								
+M01895:245:000000000-J536R:1:2109:14991:3087	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Dioszegia	
+M01895:245:000000000-J536R:1:2110:17442:21180											
+M01895:245:000000000-J536R:1:2110:7891:16976	Eukaryota	Fungi	Dikarya								
+M01895:245:000000000-J536R:1:2111:6408:15838											
+M01895:245:000000000-J536R:1:2112:14227:2722	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	
+M01895:245:000000000-J536R:1:2114:20990:23227	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:1102:15304:4967	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae	Chaetothyriales				
+M01895:315:000000000-JT5L9:1:1103:11696:12650	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales		Saccharomycetaceae	Saccharomyces	Saccharomyces cerevisiae
+M01895:315:000000000-JT5L9:1:1103:13581:8256	Eukaryota	Fungi	Dikarya	Ascomycota	Taphrinomycetes		Taphrinales		Taphrinaceae	Taphrina	Taphrina deformans
+M01895:315:000000000-JT5L9:1:1103:15257:3175	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Mycosphaerellaceae	Ramularia	Ramularia hydrangeae-macrophyllae
+M01895:315:000000000-JT5L9:1:1103:5211:12565											
+M01895:315:000000000-JT5L9:1:1104:23431:24509	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales				
+M01895:315:000000000-JT5L9:1:1105:10515:8003	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Dissoconiaceae	Ramichloridium	
+M01895:315:000000000-JT5L9:1:1106:20902:6910	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes		Helotiales		Helotiaceae	Articulospora	Articulospora proliferata
+M01895:315:000000000-JT5L9:1:1106:20942:11991											
+M01895:315:000000000-JT5L9:1:1106:23704:20871	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes					Leptospora	Leptospora rubella
+M01895:315:000000000-JT5L9:1:1107:24927:15928											
+M01895:315:000000000-JT5L9:1:1108:10654:3093	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Dothideales		Saccotheciaceae	Aureobasidium	
+M01895:315:000000000-JT5L9:1:1108:10760:20788											
+M01895:315:000000000-JT5L9:1:1108:16096:8295	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Rhynchogastremataceae	Papiliotrema	
+M01895:315:000000000-JT5L9:1:1109:18305:6196	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Filobasidium	
+M01895:315:000000000-JT5L9:1:1109:5118:10790	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:1110:23173:15114	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Polyporales				
+M01895:315:000000000-JT5L9:1:1111:19335:6812	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae	Chaetothyriales		Herpotrichiellaceae	Veronaea	
+M01895:315:000000000-JT5L9:1:1112:19314:8946	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricostilbomycetes		Agaricostilbales		Agaricostilbaceae	Sterigmatomyces	
+M01895:315:000000000-JT5L9:1:1112:23546:4775	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Phaeosphaeriaceae		
+M01895:315:000000000-JT5L9:1:1112:8804:3410	Eukaryota	Fungi	Dikarya	Basidiomycota	Exobasidiomycetes		Entylomatales		Entylomataceae	Entyloma	
+M01895:315:000000000-JT5L9:1:1113:17111:2224	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Mycosphaerellaceae	Pseudocercospora	
+M01895:315:000000000-JT5L9:1:1113:23052:6843	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes		Erysiphales		Erysiphaceae	Podosphaera	
+M01895:315:000000000-JT5L9:1:1113:7384:9411	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:1114:13937:14055	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	Vishniacozyma carnescens
+M01895:315:000000000-JT5L9:1:1114:14705:11423	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Phaeosphaeriaceae		
+M01895:315:000000000-JT5L9:1:2101:17890:26064	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Dioszegia	Dioszegia crocea
+M01895:315:000000000-JT5L9:1:2101:21192:11983	Eukaryota	Fungi	Dikarya	Basidiomycota	Microbotryomycetes						
+M01895:315:000000000-JT5L9:1:2101:2928:11584	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2101:7700:14687	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales				
+M01895:315:000000000-JT5L9:1:2101:8680:11795	Eukaryota	Fungi	Dikarya								
+M01895:315:000000000-JT5L9:1:2103:18773:3116	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes		Erysiphales		Erysiphaceae		
+M01895:315:000000000-JT5L9:1:2105:14410:10527	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2105:6149:9951	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes		Trichosphaeriales		Trichosphaeriaceae	Nigrospora	
+M01895:315:000000000-JT5L9:1:2106:13009:12227	Eukaryota	Fungi	Dikarya	Basidiomycota	Exobasidiomycetes		Entylomatales		Entylomataceae	Entyloma	Entyloma dahliae
+M01895:315:000000000-JT5L9:1:2107:7131:9540	Eukaryota	Fungi	Dikarya	Ascomycota	Taphrinomycetes		Taphrinales		Taphrinaceae	Taphrina	
+M01895:315:000000000-JT5L9:1:2108:24709:15203	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Didymellaceae		
+M01895:315:000000000-JT5L9:1:2109:11830:10335	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes						
+M01895:315:000000000-JT5L9:1:2109:4145:14033											
+M01895:315:000000000-JT5L9:1:2110:10853:17147	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Chaetosphaeriales		Chaetosphaeriaceae	Dinemasporium	Dinemasporium pseudostrigosum
+M01895:315:000000000-JT5L9:1:2111:8570:5970	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Myriangiales		Myriangiaceae	Myriangium	
+M01895:315:000000000-JT5L9:1:2112:11462:20433	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Filobasidium	
+M01895:315:000000000-JT5L9:1:2112:15554:16729	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Polyporales		Polyporaceae	Trametes	Trametes versicolor
+M01895:315:000000000-JT5L9:1:2112:17692:17827	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae			
+M01895:315:000000000-JT5L9:1:2112:5037:20906	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Diaporthales		Diaporthaceae	Diaporthe	Diaporthe passiflorae
+M01895:315:000000000-JT5L9:1:2113:15619:21476	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes	Agaricomycetidae	Agaricales		Pleurotaceae	Hohenbuehelia	
+M01895:315:000000000-JT5L9:1:2113:25679:8754	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Didymellaceae		
+M01895:315:000000000-JT5L9:1:2113:5555:5726	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae		
+M01895:315:000000000-JT5L9:1:2114:18963:6490	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales			Sarocladium	
+M01895:245:000000000-J536R:1:1102:13194:2922	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	
+M01895:245:000000000-J536R:1:1102:22232:15710	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	
+M01895:245:000000000-J536R:1:1104:14943:22445	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes						
+M01895:245:000000000-J536R:1:1104:20586:16605	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:245:000000000-J536R:1:1104:26988:16400	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes						
+M01895:245:000000000-J536R:1:1106:9641:23870	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes						
+M01895:245:000000000-J536R:1:1107:24290:12325	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	
+M01895:245:000000000-J536R:1:1108:10251:13820	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Capnodiaceae		
+M01895:245:000000000-J536R:1:1108:12871:18051	Eukaryota	Fungi	Dikarya	Ascomycota	Lecanoromycetes	Lecanoromycetidae	Lecanorales	Lecanorineae			
+M01895:245:000000000-J536R:1:1109:18308:8434	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1110:7659:15842	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1110:8451:13912	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes		Helotiales				
+M01895:245:000000000-J536R:1:1111:14061:7891											
+M01895:245:000000000-J536R:1:1111:24612:20433	Eukaryota	Fungi	Dikarya	Basidiomycota	Pucciniomycetes		Septobasidiales		Septobasidiaceae	Septobasidium	
+M01895:245:000000000-J536R:1:1112:13283:5412											
+M01895:245:000000000-J536R:1:1112:23850:24520	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:245:000000000-J536R:1:1114:12368:26750	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae			
+M01895:245:000000000-J536R:1:1114:27445:13480											
+M01895:245:000000000-J536R:1:2101:12503:16001	Eukaryota	Fungi	Dikarya	Basidiomycota	Cystobasidiomycetes						
+M01895:245:000000000-J536R:1:2102:13375:22333	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Rhynchogastremataceae	Papiliotrema	Papiliotrema laurentii
+M01895:245:000000000-J536R:1:2102:8678:11518	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae	Chaetothyriales		Cyphellophoraceae	Cyphellophora	
+M01895:245:000000000-J536R:1:2104:18974:10782	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes						
+M01895:245:000000000-J536R:1:2104:26394:21907	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales				
+M01895:245:000000000-J536R:1:2104:3902:15794	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Dothideales		Saccotheciaceae	Aureobasidium	
+M01895:245:000000000-J536R:1:2104:9782:4603	Eukaryota	Fungi	Dikarya	Ascomycota	Taphrinomycetes		Taphrinales		Protomycetaceae	Protomyces	Protomyces inouyei
+M01895:245:000000000-J536R:1:2105:27536:9650											
+M01895:245:000000000-J536R:1:2106:11253:24249	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Filobasidiaceae	Heterocephalacria	Heterocephalacria bachmannii
+M01895:245:000000000-J536R:1:2107:7802:8365	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Dothideales		Saccotheciaceae	Aureobasidium	
+M01895:245:000000000-J536R:1:2108:16868:23683											
+M01895:245:000000000-J536R:1:2108:25212:6055	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Phaeosphaeriaceae	Sclerostagonospora	
+M01895:245:000000000-J536R:1:2109:21650:23582											
+M01895:245:000000000-J536R:1:2112:19966:10876	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:245:000000000-J536R:1:2112:3337:14521											
+M01895:245:000000000-J536R:1:2112:5792:12524	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:1101:14866:28260	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes	Agaricomycetidae	Agaricales		Schizophyllaceae	Schizophyllum	Schizophyllum commune
+M01895:315:000000000-JT5L9:1:1101:22970:12909	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes	Agaricomycetidae	Agaricales		Bolbitiaceae	Panaeolus	
+M01895:315:000000000-JT5L9:1:1101:23729:11109	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales				
+M01895:315:000000000-JT5L9:1:1101:8467:15986	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes						
+M01895:315:000000000-JT5L9:1:1101:8687:6615	Eukaryota	Fungi	Dikarya	Ascomycota	Taphrinomycetes		Taphrinales		Taphrinaceae	Taphrina	
+M01895:315:000000000-JT5L9:1:1102:14660:22790	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Polyporales		Polyporaceae	Trametes	Trametes sanguinea
+M01895:315:000000000-JT5L9:1:1102:16391:2838											
+M01895:315:000000000-JT5L9:1:1102:3123:9337	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Xylariomycetidae	Xylariales		Diatrypaceae	Cryptovalsa	Cryptovalsa rabenhorstii
+M01895:315:000000000-JT5L9:1:1102:4677:20846	Eukaryota	Fungi	Dikarya	Basidiomycota	Microbotryomycetes		Leucosporidiales		Leucosporidiaceae	Leucosporidium	Leucosporidium fragarium
+M01895:315:000000000-JT5L9:1:1102:9096:24440	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Polyporales		Polyporaceae	Ganoderma	
+M01895:315:000000000-JT5L9:1:1103:7025:12927	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Periconiaceae	Periconia	
+M01895:315:000000000-JT5L9:1:1104:10343:5886	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:1104:13600:13151	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Didymellaceae		
+M01895:315:000000000-JT5L9:1:1104:13869:26597	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Rhynchogastremataceae	Papiliotrema	Papiliotrema laurentii
+M01895:315:000000000-JT5L9:1:1104:18374:12513	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes		Microthyriales			Neoscolecobasidium	Neoscolecobasidium agapanthi
+M01895:315:000000000-JT5L9:1:1104:25745:7112	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Teratosphaeriaceae	Catenulostroma	
+M01895:315:000000000-JT5L9:1:1104:6304:7934	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Polyporales		Polyporaceae	Trametes	
+M01895:315:000000000-JT5L9:1:1107:18289:7776	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Cladosporium	
+M01895:315:000000000-JT5L9:1:1108:18664:28752	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales		Tetraplosphaeriaceae		
+M01895:315:000000000-JT5L9:1:1108:19092:19307	Eukaryota	Fungi	Dikarya	Basidiomycota	Microbotryomycetes		Leucosporidiales		Leucosporidiaceae	Leucosporidium	
+M01895:315:000000000-JT5L9:1:1108:21140:9462	Eukaryota	Fungi	Dikarya	Ascomycota	Saccharomycetes		Saccharomycetales				
+M01895:315:000000000-JT5L9:1:1108:22705:24081	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales		Nigrogranaceae	Nigrograna	
+M01895:315:000000000-JT5L9:1:1109:27610:14236	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Cladosporiaceae	Rachicladosporium	
+M01895:315:000000000-JT5L9:1:1110:11251:21730	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Piskurozymaceae	Piskurozyma	
+M01895:315:000000000-JT5L9:1:1110:18036:24302	Eukaryota	Fungi	Dikarya								
+M01895:315:000000000-JT5L9:1:1111:15311:1582	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Leptosphaeriaceae		
+M01895:315:000000000-JT5L9:1:1112:15033:18441	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Dothideales		Saccotheciaceae	Aureobasidium	
+M01895:315:000000000-JT5L9:1:1113:8669:5998	Eukaryota	Fungi	Dikarya	Ascomycota	Taphrinomycetes		Taphrinales		Taphrinaceae	Taphrina	
+M01895:315:000000000-JT5L9:1:1114:10107:20021	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Russulales		Stereaceae		
+M01895:315:000000000-JT5L9:1:1114:15034:19199	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales				
+M01895:315:000000000-JT5L9:1:1114:7691:22909	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Polyporales		Polyporaceae	Ganoderma	
+M01895:315:000000000-JT5L9:1:2101:16295:21223	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes		Cantharellales		Ceratobasidiaceae	Ceratobasidium	
+M01895:315:000000000-JT5L9:1:2101:16939:23595	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes						
+M01895:315:000000000-JT5L9:1:2101:19864:12162	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Didymosphaeriaceae	Paraconiothyrium	
+M01895:315:000000000-JT5L9:1:2101:24170:15208	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:2101:3113:17836	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales				
+M01895:315:000000000-JT5L9:1:2101:6645:6745	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Sordariales		Chaetomiaceae		
+M01895:315:000000000-JT5L9:1:2101:9342:8396	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes						
+M01895:315:000000000-JT5L9:1:2102:12379:12099	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Pleosporaceae	Alternaria	
+M01895:315:000000000-JT5L9:1:2102:25724:16668	Eukaryota	Fungi		Zoopagomycota	Entomophthoromycetes		Entomophthorales		Entomophthoraceae	Entomophthora	
+M01895:315:000000000-JT5L9:1:2102:9048:21994	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes						
+M01895:315:000000000-JT5L9:1:2103:12032:12276	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Bulleribasidiaceae	Vishniacozyma	
+M01895:315:000000000-JT5L9:1:2103:18682:22885	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Mycosphaerellaceae	Ramularia	
+M01895:315:000000000-JT5L9:1:2103:18800:25819	Eukaryota	Fungi	Dikarya	Basidiomycota	Exobasidiomycetes						
+M01895:315:000000000-JT5L9:1:2103:19277:21887	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales				
+M01895:315:000000000-JT5L9:1:2103:20658:4547	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Periconiaceae	Periconia	Periconia byssoides
+M01895:315:000000000-JT5L9:1:2104:20296:20424	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes	Agaricomycetidae	Agaricales		Psathyrellaceae	Coprinellus	Coprinellus micaceus
+M01895:315:000000000-JT5L9:1:2104:24584:9834	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Hypocreomycetidae	Hypocreales				
+M01895:315:000000000-JT5L9:1:2104:6124:25069	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales		Sporormiaceae	Preussia	Preussia minima
+M01895:315:000000000-JT5L9:1:2104:9150:16365	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2105:13527:2092	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Xylariomycetidae	Xylariales		Microdochiaceae	Microdochium	Microdochium phragmitis
+M01895:315:000000000-JT5L9:1:2105:18632:10250	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes						
+M01895:315:000000000-JT5L9:1:2105:18670:28242	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales		Teichosporaceae	Teichospora	
+M01895:315:000000000-JT5L9:1:2105:24065:10883	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2105:26112:7442	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Diaporthales				
+M01895:315:000000000-JT5L9:1:2105:26997:8964	Eukaryota	Fungi	Dikarya	Basidiomycota	Agaricomycetes						
+M01895:315:000000000-JT5L9:1:2105:29011:14191	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2106:22514:22219	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Hypocreomycetidae	Glomerellales		Glomerellaceae	Colletotrichum	
+M01895:315:000000000-JT5L9:1:2107:20738:5916	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Dothideomycetidae	Capnodiales		Neodevriesiaceae	Neodevriesia	
+M01895:315:000000000-JT5L9:1:2107:27263:7427	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae			
+M01895:315:000000000-JT5L9:1:2107:5642:19494	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Tremellales		Trimorphomycetaceae	Saitozyma	Saitozyma podzolica
+M01895:315:000000000-JT5L9:1:2108:19385:10812	Eukaryota	Fungi	Dikarya	Basidiomycota	Ustilaginomycetes		Ustilaginales		Ustilaginaceae	Kalmanozyma	Kalmanozyma fusiformata
+M01895:315:000000000-JT5L9:1:2108:5686:14971	Eukaryota	Fungi	Dikarya	Basidiomycota	Exobasidiomycetes		Entylomatales		Entylomataceae	Entyloma	
+M01895:315:000000000-JT5L9:1:2109:12219:28341	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Pleosporaceae	Alternaria	Alternaria leptinellae
+M01895:315:000000000-JT5L9:1:2109:17560:11730	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Massarineae	Periconiaceae	Periconia	
+M01895:315:000000000-JT5L9:1:2110:10863:13536	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2110:19040:13330	Eukaryota	Fungi	Dikarya	Ascomycota	Leotiomycetes		Helotiales		Rutstroemiaceae	Rutstroemia	
+M01895:315:000000000-JT5L9:1:2111:16893:5135	Eukaryota	Fungi	Dikarya	Basidiomycota	Exobasidiomycetes		Entylomatales		Entylomataceae	Entyloma	
+M01895:315:000000000-JT5L9:1:2111:7095:12736	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae			
+M01895:315:000000000-JT5L9:1:2112:13874:27006	Eukaryota	Fungi	Dikarya	Ascomycota	Eurotiomycetes	Chaetothyriomycetidae	Chaetothyriales		Herpotrichiellaceae		
+M01895:315:000000000-JT5L9:1:2112:13978:4823	Eukaryota	Fungi	Dikarya	Basidiomycota	Tremellomycetes		Filobasidiales		Piskurozymaceae		
+M01895:315:000000000-JT5L9:1:2113:25732:11145	Eukaryota	Fungi	Dikarya	Ascomycota							
+M01895:315:000000000-JT5L9:1:2113:26090:11106	Eukaryota	Fungi	Dikarya	Ascomycota	Dothideomycetes	Pleosporomycetidae	Pleosporales	Pleosporineae	Pleosporaceae		
+M01895:315:000000000-JT5L9:1:2114:4448:15337	Eukaryota	Fungi	Dikarya	Ascomycota	Sordariomycetes	Sordariomycetidae	Diaporthales		Melanconiellaceae		

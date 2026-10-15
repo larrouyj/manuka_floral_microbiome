@@ -1,0 +1,637 @@
+###############################################################################
+#  Larrouy JL, Jones EE, Ridgway HJ, Dhami MK
+#  "Distinct pathways favour fungi and bacteria in the assembly of the floral
+#   microbiome; a myrtaceous case study"
+#
+#  Statistical analyses and figures. Fungi = ITS1, bacteria = 16S rRNA V4.
+#  Raw reads: NCBI SRA BioProject PRJNA1211124
+#
+#  Part 0  Set-up: packages, input files, helper functions
+#  Part 1  Flowers 2019 vs 2020 - fungi      (Fig. 1A, 1C, 1E; core OTUs)
+#  Part 2  Flowers 2019 vs 2020 - bacteria   (Fig. 1B, 1D, 1F; core OTUs)
+#  Part 3  Niches 2020 - fungi               (Fig. 2A, 2C, 2E; Fig. 3; Fig. S1)
+#  Part 4  Niches 2020 - bacteria            (Fig. 2B, 2D, 2F; Fig. 4; Fig. S1)
+#  Part 5  Bacteria, plant CG1 only          (Fig. S2; CG1-only analysis)
+#  Part 6  SourceTracker2 input files        (Fig. 5)
+#
+#  "# expected:" comments give the values obtained in the original analysis.
+#  Permutation p-values and NMDS stress can vary slightly between runs/versions.
+###############################################################################
+
+
+#### PART 0 - SET-UP ##########################################################
+
+## 0.1 Packages ---------------------------------------------------------------
+# Bioconductor: phyloseq, microbiome, decontam
+# CRAN:         vegan, ggplot2, ggpubr, patchwork, UpSetR, lme4, emmeans,
+#               mvabund, randomcoloR, lemon
+# GitHub:       remotes::install_github("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
+suppressPackageStartupMessages({
+  library(phyloseq); library(microbiome); library(decontam)
+  library(vegan); library(ggplot2); library(ggpubr); library(patchwork)
+  library(UpSetR); library(lme4); library(emmeans); library(mvabund)
+  library(pairwiseAdonis); library(randomcoloR); library(lemon)
+})
+# microbiome masks base::transform(), so microbiome::transform() is always
+# called explicitly.
+
+seed <- 59735
+set.seed(seed)
+
+## 0.2 Input / output files (edit names here only) ---------------------------
+in_dir  <- "data"
+out_dir <- "output"
+dir.create(out_dir, showWarnings = FALSE)
+
+files <- list(
+  # Flowers 2019 vs 2020, fungi
+  its_season_otu      = "summary.V2.txt",
+  its_season_tax      = "ITS_fungi_species_and_genus.tax-27821929.V2.txt",
+  its_season_meta     = "metadata_2.csv",
+  its_season_meta_dc  = "metadata.csv",            # used for decontam only
+  # Flowers 2019 vs 2020, bacteria
+  bac_season_otu      = "summary.16S_seasonality.txt",
+  bac_season_tax      = "16S_tax_ident-claident-SILVA-2022022_V2.txt",
+  bac_season_meta     = "metadata_seasonality_16S_test.csv",
+  # Niches 2020, fungi
+  its_niche_otu       = "summary_v2_140622.txt",
+  its_niche_tax       = "ITS_fungi_species_and_genus.tax-27761387_v2_140622.txt",
+  its_niche_meta      = "metadata.3.csv",
+  its_niche_meta_dc   = "metadata.2.csv",          # used for decontam only
+  its_niche_plate_pcr = "number-to-sample-chap2-origin.csv",
+  its_niche_plate_kit = "number-to-sample-control-kit-chap2-origin.csv",
+  # Niches 2020, bacteria
+  bac_niche_otu       = "summary.Chap2-16S.txt",
+  bac_niche_tax       = "16S_tax_ident-claident-SILVA-2022022.txt",
+  bac_niche_meta      = "metadata.Chap2-16S_V2.csv",
+  bac_niche_plate     = "number-to-sample-control-kit-chap2-16S-origin.csv"
+)
+f <- function(key) file.path(in_dir, files[[key]])
+
+## 0.3 Helper functions: data import and cleaning ----------------------------
+
+# Claident OTU summary: samples in rows, OTUs in columns
+read_otu <- function(file) {
+  x <- read.table(file, header = TRUE, sep = "\t", row.names = 1,
+                  check.names = FALSE, quote = "", comment.char = "")
+  otu_table(t(as.matrix(x)), taxa_are_rows = TRUE)
+}
+
+# Claident taxonomy; OTUs with these superkingdom values are dropped
+read_tax <- function(file, drop_superkingdom = "") {
+  x <- read.table(file, header = TRUE, sep = "\t", row.names = 1,
+                  check.names = FALSE, quote = "", comment.char = "",
+                  colClasses = "character")
+  x <- x[!(x$superkingdom %in% drop_superkingdom), , drop = FALSE]
+  tax_table(as.matrix(x))
+}
+drop_16S <- c("", "Chloroplast", "Mitochondria", "Uncertain")
+
+read_meta <- function(file) {
+  x <- read.csv(file, header = TRUE, fileEncoding = "UTF-8-BOM")
+  names(x) <- sub("^(X\\.U\\.FEFF\\.|\u00ef\\.\\.)", "", names(x))  # stray BOM
+  x
+}
+
+# Add plate position + run set. The first column of the plate file is the
+# plate position (the original scripts renamed it "ple_ID" via gsub).
+merge_plate <- function(meta, plate_file, breaks) {
+  plate <- read_meta(plate_file)
+  names(plate)[1] <- "Plate_position"
+  m <- merge(meta, plate, by = "Sample_ID")
+  m$runset <- cut(as.numeric(m$Plate_position), breaks = breaks,
+                  labels = c("set1", "set2"))
+  m
+}
+
+# Build phyloseq object; metadata matched to samples by Sample_ID when possible
+attach_meta <- function(otu, tax, meta, id_col = "Sample_ID") {
+  ids <- sample_names(otu)
+  if (id_col %in% names(meta) && all(ids %in% meta[[id_col]])) {
+    idx <- match(ids, meta[[id_col]])
+    if (!identical(idx, seq_along(ids)))
+      message("Metadata rows re-ordered to match the OTU table (matched by ID).")
+    meta <- meta[idx, , drop = FALSE]
+  } else {
+    warning("Sample IDs not found in metadata: rows assigned by position, ",
+            "as in the original scripts. Check the order carefully!")
+    stopifnot(nrow(meta) == length(ids))
+  }
+  rownames(meta) <- ids
+  phyloseq(otu, tax, sample_data(meta))   # keeps only OTUs present in 'tax'
+}
+
+# Samples x taxa count matrix
+otu_mat <- function(ps) {
+  m <- as(otu_table(ps), "matrix")
+  if (taxa_are_rows(ps)) t(m) else m
+}
+
+keep_samples <- function(ps, var, levels) {
+  prune_samples(as.character(sample_data(ps)[[var]]) %in% levels, ps)
+}
+
+# decontam, prevalence method, within one run set / year
+find_contaminants <- function(ps, subset_var, subset_level, neg_type,
+                              threshold = 0.5) {
+  ps <- prune_samples(sample_sums(ps) >= 1, ps)
+  ps <- keep_samples(ps, subset_var, subset_level)
+  sample_data(ps)$is.neg <- sample_data(ps)$Sample_type == neg_type
+  res <- isContaminant(ps, method = "prevalence", neg = "is.neg",
+                       threshold = threshold)
+  hits <- rownames(res)[which(res$contaminant)]
+  cat(subset_level, "/", neg_type, ":", length(hits), "candidate OTU(s)\n")
+  hits
+}
+
+# Remove contaminants, keep study samples, filter low-read samples and OTUs,
+# remove OTUs unassigned at phylum level
+clean_ps <- function(ps, bad_taxa = character(0), keep_var, keep_levels,
+                     min_sample_reads = 0, min_taxon_reads = 2) {
+  ps <- prune_taxa(!(taxa_names(ps) %in% bad_taxa), ps)
+  ps <- keep_samples(ps, keep_var, keep_levels)
+  ps <- prune_samples(sample_sums(ps) >= min_sample_reads, ps)
+  ps <- prune_taxa(taxa_sums(ps) >= min_taxon_reads, ps)
+  tt <- as.data.frame(as(tax_table(ps), "matrix"))
+  ps <- prune_taxa(!is.na(tt$phylum) & !(tt$phylum %in% c("", "uncharacterized")), ps)
+  print(ps); cat("Total reads:", sum(sample_sums(ps)), "\n")
+  ps
+}
+
+# Write processed OTU table, taxonomy and metadata (files for deposit)
+export_ps <- function(ps, prefix) {
+  w <- function(x, what)
+    write.csv(x, file.path(out_dir, paste0(prefix, "_", what, ".csv")))
+  w(as(otu_table(ps), "matrix"), "OTU_table")
+  w(as(tax_table(ps), "matrix"), "taxonomy")
+  w(as(sample_data(ps), "data.frame"), "metadata")
+}
+
+# Fill unassigned ranks with the lowest assigned rank (for plot labels only)
+fill_tax <- function(ps) {
+  ranks  <- c("superkingdom", "phylum", "class", "order", "family", "genus", "species")
+  prefix <- c("Kingdom_", "Phylum_", "Class_", "Order_", "Family_", "Genus_")
+  tt <- as.data.frame(as(tax_table(ps), "matrix"), stringsAsFactors = FALSE)[, ranks]
+  tt[is.na(tt)] <- ""
+  for (i in seq_len(nrow(tt))) for (r in 2:7) {
+    if (tt[i, r] == "") { tt[i, r:7] <- paste0(prefix[r - 1], tt[i, r - 1]); break }
+  }
+  tax_table(ps) <- tax_table(as.matrix(tt))
+  ps
+}
+
+## 0.4 Helper functions: analyses and figures -------------------------------
+
+save_txt <- function(x, name)
+  capture.output(print(x), file = file.path(out_dir, paste0(name, ".txt")))
+
+save_pdf <- function(p, name, w = 7, h = 6) {
+  pdf(file.path(out_dir, paste0(name, ".pdf")), width = w, height = h)
+  if (inherits(p, "gtable")) grid::grid.draw(p) else print(p)
+  dev.off()
+}
+
+# Figure theme used in the published figures
+theme_fig <- theme_classic() +
+  theme(legend.title = element_blank(),
+        legend.text  = element_text(size = 12, face = "bold"),
+        axis.title   = element_text(size = 12, face = "bold"))
+
+# Move the legend into the empty facet panel (was shift_legend2())
+legend_in_empty_panel <- function(p) {
+  gp <- ggplotGrob(p)
+  panels <- grep("^panel", gp$layout$name)
+  empty  <- panels[sapply(panels, function(i) inherits(gp$grobs[[i]], "zeroGrob"))]
+  lemon::reposition_legend(p, "center", panel = gp$layout$name[empty], plot = FALSE)
+}
+
+# Core OTUs: detection = 0.001, prevalence = 75 %
+core_by_group <- function(ps, group_var, levels, prefix,
+                          detection = 0.001, prevalence = 0.75) {
+  out <- do.call(rbind, lapply(levels, function(l) {
+    rel <- microbiome::transform(keep_samples(ps, group_var, l), "compositional")
+    ids <- core_members(rel, detection = detection, prevalence = prevalence)
+    if (length(ids) == 0) return(NULL)
+    data.frame(group = l, OTU = ids,
+               as.data.frame(as(tax_table(rel), "matrix"))[ids, , drop = FALSE],
+               row.names = NULL, check.names = FALSE)
+  }))
+  write.csv(out, file.path(out_dir, paste0(prefix, "_core_OTUs.csv")), row.names = FALSE)
+  print(table(out$group))
+  out
+}
+
+# Shared/unique OTUs between groups (UpSet plot)
+plot_upset <- function(ps, group_var, sets, labels = sets, set_cols,
+                       ylab = "Unique or shared OTUs", xlab = "OTUs per Niche",
+                       text_scale = 1.9, ...) {
+  m   <- merge_samples(ps, group_var)
+  otu <- as(otu_table(m), "matrix"); if (!taxa_are_rows(m)) otu <- t(otu)
+  bin <- as.data.frame((otu[, sets, drop = FALSE] > 0) * 1L)
+  colnames(bin) <- labels
+  upset(bin, sets = rev(labels), keep.order = TRUE, nsets = length(labels),
+        order.by = "freq", text.scale = text_scale,
+        mainbar.y.label = ylab, sets.x.label = xlab,
+        sets.bar.color = rev(set_cols), ...)
+}
+
+# Shannon index (vegan) + metadata
+add_shannon <- function(ps_t) {
+  df <- as(sample_data(ps_t), "data.frame")
+  df$Shannon <- vegan::diversity(otu_mat(ps_t), index = "shannon")
+  df
+}
+
+# LMM: Shannon ~ niche + (1 | plant); LRT against null model; Tukey post hoc
+shannon_lmm <- function(ps_t, levels, name, group_var = "Sample_type",
+                        random_var = "Plant") {
+  df <- add_shannon(ps_t)
+  df$group  <- factor(as.character(df[[group_var]]), levels = levels)
+  df$random <- factor(df[[random_var]])
+  full <- lmer(Shannon ~ group + (1 | random), data = df)
+  null <- lmer(Shannon ~ 1 + (1 | random), data = df)
+  lrt  <- anova(null, full)                     # ML refit, chi-square LRT
+  ph   <- as.data.frame(pairs(emmeans(full, ~ group)))
+  save_txt(list(LRT = lrt, Pairwise = ph), name)
+  print(lrt)
+  # Model checks: plot(full); qqnorm(resid(full)); qqline(resid(full))
+  list(data = df, model = full, lrt = lrt, posthoc = ph)
+}
+
+plot_shannon <- function(df, levels, labels, cols) {
+  df$group <- factor(as.character(df$group), levels = levels, labels = labels)
+  set.seed(seed)
+  ggplot(df, aes(group, Shannon, colour = group)) +
+    geom_boxplot(outlier.shape = NA) + geom_jitter(alpha = 0.6) +
+    scale_colour_manual(values = cols) +
+    labs(x = "Niches", y = "Shannon index") + theme_fig +
+    theme(axis.text.x = element_blank(), axis.ticks.x = element_blank())
+}
+
+# Bray-Curtis PERMANOVA (permutations within plant), dispersion, pairwise tests
+beta_tests <- function(ps_t, group_var, name, strata_var = "Plant",
+                       pairwise = FALSE) {
+  meta <- as(sample_data(ps_t), "data.frame")
+  d <- phyloseq::distance(ps_t, method = "bray")
+  strata <- if (is.null(strata_var)) NULL else meta[[strata_var]]
+  set.seed(seed)
+  perm <- adonis2(as.formula(paste("d ~", group_var)), data = meta,
+                  permutations = 999, strata = strata)
+  set.seed(seed)
+  disp <- permutest(betadisper(d, meta[[group_var]]), permutations = 999)
+  pw <- if (pairwise) pairwise.adonis(d, meta[[group_var]]) else NULL
+  save_txt(list(PERMANOVA = perm, Dispersion = disp, Pairwise = pw), name)
+  print(perm); print(disp)
+  invisible(list(permanova = perm, dispersion = disp, pairwise = pw))
+}
+
+# NMDS (Bray-Curtis); metaMDS() defaults kept as in the original analysis
+plot_nmds <- function(ps_t, group_var, levels, labels = levels, cols,
+                      mean_point = FALSE, star_plot = FALSE) {
+  set.seed(seed)
+  ord <- metaMDS(otu_mat(ps_t), distance = "bray", trymax = 30000, trace = FALSE)
+  cat("NMDS stress:", round(ord$stress, 4), "\n")
+  sc  <- as.data.frame(scores(ord, display = "sites"))
+  sc$group <- factor(as.character(sample_data(ps_t)[[group_var]]),
+                     levels = levels, labels = labels)
+  ggscatter(sc, x = "NMDS1", y = "NMDS2", color = "group", ellipse = TRUE,
+            ellipse.border.remove = TRUE, mean.point = mean_point,
+            mean.point.size = 6, star.plot = star_plot) +
+    scale_color_manual(values = cols) + scale_fill_manual(values = cols) +
+    theme_fig
+}
+
+# Multivariate GLM (negative binomial) on raw counts, PIT-trap resampling
+# (slow: ~1.5 h for the 16S niche data set)
+run_manyglm <- function(ps, group_var, name, nBoot = 999) {
+  df <- as(sample_data(ps), "data.frame")
+  df$group <- factor(df[[group_var]])
+  y <- mvabund(otu_mat(ps))
+  mod <- manyglm(y ~ group, data = df, family = "negative_binomial")
+  set.seed(seed)
+  res <- anova(mod, nBoot = nBoot)
+  save_txt(res, name); print(res)
+  invisible(list(model = mod, anova = res))
+}
+
+# Top-n OTUs per group, pooled by group, remainder = "Others" (Fig. 1C/D)
+plot_top_merged <- function(ps, group_var, n = 20, rank = "genus") {
+  rel <- transform_sample_counts(merge_samples(fill_tax(ps), group_var),
+                                 function(x) 100 * x / sum(x))
+  top <- names(sort(taxa_sums(rel), decreasing = TRUE))[seq_len(n)]
+  df  <- psmelt(prune_taxa(top, rel))
+  df$taxon <- df[[rank]]
+  df  <- aggregate(Abundance ~ Sample + taxon, data = df, FUN = sum)
+  oth <- aggregate(Abundance ~ Sample, data = df, FUN = sum)
+  oth$Abundance <- 100 - oth$Abundance; oth$taxon <- "Others"
+  df  <- rbind(df, oth[, names(df)])
+  df$taxon <- factor(df$taxon,
+                     levels = c(sort(setdiff(unique(df$taxon), "Others")), "Others"))
+  set.seed(seed)
+  pal <- c(distinctColorPalette(nlevels(df$taxon) - 1), "grey80")
+  ggplot(df, aes(Sample, Abundance, fill = taxon)) + geom_col() +
+    scale_fill_manual(values = pal) +
+    labs(x = NULL, y = "Relative abundance (%)", fill = rank) + theme_classic() +
+    theme(legend.text  = element_text(size = 11, face = "bold.italic"),
+          legend.title = element_text(size = 15, face = "bold"),
+          axis.title.y = element_text(size = 13, face = "bold"),
+          axis.text.x  = element_text(angle = 45, hjust = 1))
+}
+
+# Top-n OTUs within each niche, one bar per sample (Fig. 3, 4)
+plot_top_by_niche <- function(ps, levels, labels, n = 20, rank = "genus") {
+  ps <- fill_tax(ps)   # unresolved genera labelled by lowest known rank
+  df <- do.call(rbind, lapply(levels, function(g) {
+    rel <- transform_sample_counts(keep_samples(ps, "Sample_type", g),
+                                   function(x) 100 * x / sum(x))
+    top <- names(sort(taxa_sums(rel), decreasing = TRUE))[seq_len(n)]
+    psmelt(tax_glom(prune_taxa(top, rel), taxrank = rank, NArm = FALSE))
+  }))
+  df$Sample_type <- factor(df$Sample_type, levels = levels, labels = labels)
+  set.seed(seed)
+  pal <- distinctColorPalette(length(unique(df[[rank]])))
+  ggplot(df, aes(Sample, Abundance, fill = .data[[rank]])) +
+    geom_col() +
+    facet_wrap(~ Sample_type, ncol = 3, scales = "free_x") +
+    scale_fill_manual(values = pal) +
+    labs(x = NULL, y = "Relative abundance (%)", fill = rank) +
+    theme_classic() +
+    theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(),
+          legend.direction = "horizontal",
+          legend.text  = element_text(size = 11, face = "bold.italic"),
+          legend.title = element_text(size = 15, face = "bold"),
+          strip.text   = element_text(size = 11, face = "bold"),
+          axis.title.y = element_text(size = 13, face = "bold"))
+}
+
+## 0.5 Plot constants ----------------------------------------------------------
+niche_levels <- c("Bee_epiphytes", "Bag_flowers", "Flowers", "Leaves",
+                  "Underlying_flower_stem", "Lateral_roots", "Soil")
+niche_labels <- c("Bee epiphytes", "Bagged flowers", "Flowers", "Leaves",
+                  "Stems", "Roots", "Soil")      # as in the figures
+niche_cols   <- c("orange", "#FF61C9", "deeppink3", "green4", "#00A087B2",
+                  "salmon3", "#7E6148B2")
+upset_cols   <- replace(niche_cols, 1, "goldenrod1")   # bees in UpSet plots
+ag_levels <- c("Bag_flowers", "Flowers", "Leaves", "Underlying_flower_stem")
+ag_labels <- c("Bagged flowers", "Flowers", "Leaves", "Stems")
+ag_cols   <- c("#FF61C9", "deeppink3", "green4", "#00A087B2")
+year_levels <- c("Y_2019", "Y_2020")
+year_cols   <- c("brown1", "cyan3")      # 2019 = red, 2020 = blue (Fig. 1A/B)
+
+
+#### PART 1 - FLOWERS 2019 vs 2020, FUNGI (ITS) ###############################
+
+its_s_otu <- read_otu(f("its_season_otu"))
+its_s_tax <- read_tax(f("its_season_tax"))
+
+## 1.1 Contaminant screening
+ps_dc <- attach_meta(its_s_otu, its_s_tax, read_meta(f("its_season_meta_dc")))
+for (yr in c("2019", "2020")) for (neg in c("Control_PCR", "Control_Kit"))
+  print(find_contaminants(ps_dc, "Year", yr, neg))
+# Only 2020 / Control_Kit flagged OTUs (2). OTU
+# M01895:245:000000000-J536R:1:1109:9603:25370 was kept after manual checking
+# (present in samples of the other year and absent from the other kit control).
+its_s_contam <- "M01895:315:000000000-JT5L9:1:2109:6130:20970"
+
+## 1.2 Cleaned data set (flowers only)
+its_s <- attach_meta(its_s_otu, its_s_tax, read_meta(f("its_season_meta")))
+its_s <- clean_ps(its_s, its_s_contam, "Sample_type", "Flowers", min_taxon_reads = 2)
+table(sample_data(its_s)$Year)
+# expected: 379 OTUs, 47 samples (Y_2019 = 23, Y_2020 = 24), 329,707 reads
+export_ps(its_s, "ITS_flowers_2019_2020")
+
+## 1.3 Shared/unique OTUs between years (Fig. 1A)
+save_pdf(plot_upset(its_s, "Year", year_levels, set_cols = year_cols,
+                    ylab = "Number of OTUs", xlab = "OTUs per year", text_scale = 2,
+                    main.bar.color = c("cyan3", "darkorchid", "brown2")),
+         "Fig1A_ITS_upset_year")
+# expected: 146 shared OTUs
+
+## 1.4 Top 20 OTUs per plant x year (Fig. 1C)
+save_pdf(plot_top_merged(its_s, "Group"), "Fig1C_ITS_top20_genus", 9, 6)
+
+## 1.5 Core OTUs per year
+core_by_group(its_s, "Year", year_levels, "ITS_flowers_year")
+# expected: 11 (2019), 10 (2020), 9 shared
+
+## 1.6 Beta diversity ("normalize", Bray-Curtis)
+its_s_t <- microbiome::transform(its_s, "normalize")
+beta_tests(its_s_t, "Year", "ITS_flowers_year_PERMANOVA")
+# expected: R2 = 0.123, p = 0.001; dispersion F = 0.75, p = 0.40
+save_pdf(plot_nmds(its_s_t, "Year", year_levels, cols = year_cols, mean_point = TRUE),
+         "Fig1E_ITS_NMDS_year")
+# expected stress = 0.151
+
+
+#### PART 2 - FLOWERS 2019 vs 2020, BACTERIA (16S) ############################
+
+bac_s_otu <- read_otu(f("bac_season_otu"))
+bac_s_tax <- read_tax(f("bac_season_tax"), drop_superkingdom = drop_16S)
+
+## 2.1 Contaminant screening
+ps_dc <- attach_meta(bac_s_otu, bac_s_tax, read_meta(f("bac_season_meta")))
+for (yr in year_levels) for (neg in c("Control_PCR", "Control_Kit"))
+  print(find_contaminants(ps_dc, "Year", yr, neg))
+# Candidates were checked manually; OTUs retained as true contaminants:
+bac_s_contam <- paste0("M01895:315:000000000-JT5L9:1:", c(
+  "2112:7476:12067", "1111:9160:13646", "2112:14025:15002", "2114:12194:24450",
+  "1103:20362:27328", "2103:25513:18699", "1114:5254:16043", "2105:9793:19087",
+  "1108:8151:23624", "1112:2206:13546", "2110:4676:20721", "1105:6606:11601",
+  "1101:8424:7258", "1106:23553:11254", "1101:10277:6535", "2102:8646:15568",
+  "1103:14601:13626", "2107:19781:16094", "1103:17576:27067", "1102:16237:4515",
+  "2106:22326:16789", "1109:24232:20499", "1111:3767:8042"))
+
+## 2.2 Cleaned data set (flowers only)
+bac_s <- attach_meta(bac_s_otu, bac_s_tax, read_meta(f("bac_season_meta")))
+bac_s <- clean_ps(bac_s, bac_s_contam, "Sample_type", "Flowers", min_taxon_reads = 2)
+table(sample_data(bac_s)$Year)
+# expected: 180 OTUs, 46 samples (Y_2019 = 22, Y_2020 = 24), 131,649 reads
+export_ps(bac_s, "16S_flowers_2019_2020")
+
+## 2.3 Shared/unique OTUs (Fig. 1B)
+save_pdf(plot_upset(bac_s, "Year", year_levels, set_cols = year_cols,
+                    ylab = "Number of OTUs", xlab = "OTUs per year", text_scale = 2,
+                    main.bar.color = c("brown2", "darkorchid", "cyan3")),
+         "Fig1B_16S_upset_year")
+# expected: 50 shared OTUs
+
+## 2.4 Top 20 OTUs per plant x year (Fig. 1D)
+save_pdf(plot_top_merged(bac_s, "Group"), "Fig1D_16S_top20_genus", 9, 6)
+
+## 2.5 Core OTUs per year
+core_by_group(bac_s, "Year", year_levels, "16S_flowers_year")
+# expected: 6 (2019), 1 (2020), 1 shared (Pseudomonas)
+
+## 2.6 Beta diversity (log10(x+1), Bray-Curtis)
+bac_s_t <- microbiome::transform(bac_s, "log10p")
+beta_tests(bac_s_t, "Year", "16S_flowers_year_PERMANOVA")
+# expected: R2 = 0.20, p = 0.001; dispersion F = 0.16, p = 0.68
+save_pdf(plot_nmds(bac_s_t, "Year", year_levels, cols = year_cols, mean_point = TRUE),
+         "Fig1F_16S_NMDS_year")
+# expected stress = 0.148
+
+
+#### PART 3 - NICHES 2020, FUNGI (ITS) ########################################
+
+its_n_otu <- read_otu(f("its_niche_otu"))
+its_n_tax <- read_tax(f("its_niche_tax"))
+
+## 3.1 Contaminant screening (per sequencing plate / extraction kit)
+meta_dc <- read_meta(f("its_niche_meta_dc"))
+ps_pcr  <- attach_meta(its_n_otu, its_n_tax,
+                       merge_plate(meta_dc, f("its_niche_plate_pcr"), c(0, 90, 172)))
+for (s in c("set1", "set2")) print(find_contaminants(ps_pcr, "runset", s, "Control_PCR"))
+ps_kit  <- attach_meta(its_n_otu, its_n_tax,
+                       merge_plate(meta_dc, f("its_niche_plate_kit"), c(0, 150, 168)))
+for (s in c("set1", "set2")) print(find_contaminants(ps_kit, "runset", s, "Control_Kit"))
+# PCR set2: 2 OTUs; kit set1 (plant kit): 6 OTUs, of which
+# M01895:315:000000000-JT5L9:1:1101:16154:1789 was kept (in only one kit control,
+# absent from soil kit control, abundant in many samples).
+its_n_contam <- paste0("M01895:315:000000000-JT5L9:1:", c(
+  "1101:9819:20563", "1109:6423:18311",                       # PCR controls
+  "2106:18606:8909", "2105:23485:11869", "1101:19258:10019",
+  "2109:6130:20970", "1106:7083:7217"))                       # kit controls
+
+## 3.2 Cleaned data set
+its_n <- attach_meta(its_n_otu, its_n_tax,
+                     merge_plate(read_meta(f("its_niche_meta")),
+                                 f("its_niche_plate_pcr"), c(0, 90, 172)))
+its_n <- clean_ps(its_n, its_n_contam, "Plant",
+                  c("Crimson_glory _1 ", "Crimson_glory _2", "Crimson_glory _3"),
+                  min_taxon_reads = 2)
+table(sample_data(its_n)$Sample_type)
+# expected: 1,545 OTUs, 164 samples, 995,631 reads; Flowers 24, Bag_flowers 24,
+# Leaves 24, Stem 24, Roots 23, Soil 24, Bee 21
+export_ps(its_n, "ITS_niches_2020")
+
+## 3.3 Shared/unique OTUs between niches (Fig. S1)
+save_pdf(plot_upset(its_n, "Sample_type", niche_levels, niche_labels,
+                    set_cols = upset_cols,
+                    main.bar.color = c("#7E6148B2", "goldenrod1", "4", "#FF61C9",
+                                       "deeppink3", "salmon3", "#00A087B2", "green4",
+                                       rep("4", 62))),
+         "Upset_plot_ITS", w = 12.5, h = 6.5)
+
+## 3.4 Composition, top 20 OTUs per niche (Fig. 3)
+save_pdf(legend_in_empty_panel(plot_top_by_niche(its_n, niche_levels, niche_labels)),
+         "RE_ITS", w = 15, h = 9)
+
+## 3.5 Core OTUs per niche
+core_by_group(its_n, "Sample_type", niche_levels, "ITS_niches")
+
+## 3.6 Alpha diversity: Shannon ("normalize" = identical to raw counts)
+its_n_t <- microbiome::transform(its_n, "normalize")
+its_alpha <- shannon_lmm(its_n_t, niche_levels, "ITS_niches_Shannon_LMM")
+# expected (manuscript): chi2 = 199, p < 0.001
+save_pdf(plot_shannon(its_alpha$data, niche_levels, niche_labels, niche_cols),
+         "Shannon2_ITS_origin", w = 7, h = 5)
+
+## 3.7 Beta diversity, all niches ("normalize", Bray-Curtis)
+beta_tests(its_n_t, "Sample_type", "ITS_niches_PERMANOVA", pairwise = TRUE)
+# expected: R2 = 0.604, p = 0.001 (manuscript: dispersion F = 31.9, p = 0.001)
+bray_all_its <- plot_nmds(its_n_t, "Sample_type", niche_levels, niche_labels, niche_cols)
+# expected stress = 0.075
+
+## 3.8 Multivariate GLM (dispersion heterogeneous)
+# NOTE: no fungal manyglm code was found in the original scripts; this mirrors
+# the 16S code. Check that it reproduces LRT = 32374 reported in the manuscript.
+run_manyglm(its_n, "Sample_type", "ITS_niches_manyglm")
+
+## 3.9 Above-ground organs only ("normalize", Bray-Curtis)
+its_ag_t <- microbiome::transform(keep_samples(its_n, "Sample_type", ag_levels),
+                                  "normalize")
+beta_tests(its_ag_t, "Sample_type", "ITS_aboveground_PERMANOVA", pairwise = TRUE)
+# expected: R2 = 0.428, p = 0.001; dispersion F = 2.5, p = 0.001
+bray_ag_its <- plot_nmds(its_ag_t, "Sample_type", ag_levels, ag_labels, ag_cols)
+# expected stress = 0.14
+
+save_pdf(bray_all_its / bray_ag_its + plot_annotation(tag_levels = "a"),
+         "Bray_All_and_AG_ITS", w = 6, h = 6)
+
+
+#### PART 4 - NICHES 2020, BACTERIA (16S) #####################################
+# NB: decontam candidates were checked in a separate script and not removed
+# here; flagged OTUs were removed by the filters below.
+
+bac_n <- attach_meta(read_otu(f("bac_niche_otu")),
+                     read_tax(f("bac_niche_tax"), drop_superkingdom = drop_16S),
+                     merge_plate(read_meta(f("bac_niche_meta")),
+                                 f("bac_niche_plate"), c(0, 150, 300)))
+
+## 4.1 Cleaned data set: samples >= 100 reads, OTUs > 2 reads
+bac_n <- clean_ps(bac_n, keep_var = "Plant", keep_levels = c("CG1", "CG2", "CG3"),
+                  min_sample_reads = 100, min_taxon_reads = 3)
+table(sample_data(bac_n)$Sample_type)
+# expected: 2,491 OTUs, 155 samples, 541,294 reads; Flowers 21, Bag_flowers 23,
+# Leaves 24, Stem 23, Roots 22, Soil 23, Bee 19
+export_ps(bac_n, "16S_niches_2020")
+
+## 4.2 Shared/unique OTUs (Fig. S1)
+save_pdf(plot_upset(bac_n, "Sample_type", niche_levels, niche_labels,
+                    set_cols = upset_cols,
+                    main.bar.color = c("#7E6148B2", "4", "salmon3", "goldenrod1",
+                                       "#00A087B2", rep("4", 10), "deeppink3",
+                                       rep("4", 10), "#FF61C9", rep("4", 4),
+                                       "green4", rep("4", 26))),
+         "Upset_plot_16S", w = 12.5, h = 6.5)
+
+## 4.3 Composition, top 20 OTUs per niche (Fig. 4)
+save_pdf(legend_in_empty_panel(plot_top_by_niche(bac_n, niche_levels, niche_labels)),
+         "RE_16S", w = 15, h = 9)
+
+## 4.4 Core OTUs per niche
+core_by_group(bac_n, "Sample_type", niche_levels, "16S_niches")
+
+## 4.5 Alpha diversity: Shannon on Hellinger-transformed data
+bac_n_t <- microbiome::transform(bac_n, "hellinger")
+bac_alpha <- shannon_lmm(bac_n_t, niche_levels, "16S_niches_Shannon_LMM")
+# expected (manuscript): chi2 = 240, p < 0.001
+save_pdf(plot_shannon(bac_alpha$data, niche_levels, niche_labels, niche_cols),
+         "Shannon2_16S_origin", w = 7, h = 5)
+
+## 4.6 Beta diversity, all niches (Hellinger, Bray-Curtis)
+beta_tests(bac_n_t, "Sample_type", "16S_niches_PERMANOVA", pairwise = TRUE)
+# expected: R2 = 0.523, p = 0.001; dispersion F = 16.3, p = 0.001
+bray_all_16S <- plot_nmds(bac_n_t, "Sample_type", niche_levels, niche_labels, niche_cols)
+# expected stress = 0.173
+
+## 4.7 Multivariate GLM (dispersion heterogeneous)
+run_manyglm(bac_n, "Sample_type", "16S_niches_manyglm")
+# expected: Dev (LRT) = 77614, p = 0.001
+
+## 4.8 Above-ground organs only (Hellinger, Bray-Curtis)
+bac_ag_t <- microbiome::transform(keep_samples(bac_n, "Sample_type", ag_levels),
+                                  "hellinger")
+beta_tests(bac_ag_t, "Sample_type", "16S_aboveground_PERMANOVA", pairwise = TRUE)
+# expected: R2 = 0.483, p = 0.001; dispersion F = 0.60, p = 0.62
+bray_ag_16S <- plot_nmds(bac_ag_t, "Sample_type", ag_levels, ag_labels, ag_cols)
+# expected stress = 0.09
+
+save_pdf(bray_all_16S / bray_ag_16S + plot_annotation(tag_levels = "a"),
+         "Bray_All_and_AG_16S", w = 6, h = 6)
+
+
+#### PART 5 - BACTERIA, PLANT CG1 ONLY (flowers vs bagged flowers) ############
+
+cg1 <- keep_samples(keep_samples(bac_n, "Plant", "CG1"), "Sample_type",
+                    c("Flowers", "Bag_flowers"))
+
+## 5.1 Beta diversity (log10(x+1)); single plant, so no strata
+cg1_t <- microbiome::transform(cg1, "log10p")
+beta_tests(cg1_t, "Sample_type", "16S_CG1_flowers_bagged_PERMANOVA", strata_var = NULL)
+# expected: R2 = 0.15, p = 0.038; dispersion F = 0.53, p = 0.458
+save_pdf(plot_nmds(cg1_t, "Sample_type", c("Bag_flowers", "Flowers"),
+                   c("Bagged flowers", "Flowers"), ag_cols[1:2], star_plot = TRUE),
+         "16S_Plant1_Beta-Log10_Flower_bagged-flower", w = 6, h = 4)
+
+## 5.2 Alpha diversity (Hellinger), linear model
+cg1_alpha <- add_shannon(microbiome::transform(cg1, "hellinger"))
+cg1_lm <- anova(lm(Shannon ~ 1, data = cg1_alpha),
+                lm(Shannon ~ Sample_type, data = cg1_alpha))
+save_txt(cg1_lm, "16S_CG1_Shannon_lm"); print(cg1_lm)
+# expected: no significant difference
+
+
+
+#### SESSION INFO ##############################################################
+writeLines(capture.output(sessionInfo()), file.path(out_dir, "sessionInfo.txt"))
